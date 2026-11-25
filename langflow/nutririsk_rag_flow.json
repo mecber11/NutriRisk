@@ -1,0 +1,176 @@
+{
+  "id": "5f6f0c1e-2f2a-4d0b-9a7c-1a2b3c4d5e6f",
+  "name": "NutriRisk · Analista RAG (prototipo)",
+  "description": "Flujo LangFlow de prototipado para el agente de consulta de NutriRisk AI. Encadena una pregunta de usuario, un prompt con contexto de indicadores, un modelo de lenguaje y una herramienta HTTP que consulta la API de NutriRisk (prevalencias, ranking territorial, modelos y equidad). Importar en LangFlow 1.x; si el esquema del componente HTTP cambia entre versiones, vuelva a conectar los campos indicados en la descripción de cada nodo.",
+  "is_component": false,
+  "endpoint_name": "nutririsk-analyst",
+  "data": {
+    "nodes": [
+      {
+        "id": "ChatInput-nutririsk",
+        "type": "ChatInput",
+        "position": { "x": 0, "y": 120 },
+        "data": {
+          "id": "ChatInput-nutririsk",
+          "type": "ChatInput",
+          "node": {
+            "display_name": "Pregunta del usuario",
+            "description": "Entrada del analista de salud pública.",
+            "template": {
+              "input_value": {
+                "display_name": "Texto",
+                "type": "str",
+                "value": "¿Cuál es la prevalencia de retraso del crecimiento en la región Norte en 2023?",
+                "input_types": ["Message"]
+              }
+            },
+            "base_classes": ["Message"]
+          },
+          "value": "¿Cuál es la prevalencia de retraso del crecimiento en la región Norte en 2023?"
+        }
+      },
+      {
+        "id": "PromptTemplate-nutririsk",
+        "type": "PromptTemplate",
+        "position": { "x": 320, "y": 60 },
+        "data": {
+          "id": "PromptTemplate-nutririsk",
+          "type": "PromptTemplate",
+          "node": {
+            "display_name": "Contexto NutriRisk",
+            "description": "Instrucciones del analista y contexto de datos.",
+            "template": {
+              "template": {
+                "display_name": "Plantilla",
+                "type": "prompt",
+                "value": "Eres el analista de NutriRisk AI. Responde en español, cita cifras y aclara que los datos de demostración son sintéticos.\n\nContexto recuperado:\n{context}\n\nPregunta: {question}\nRespuesta:"
+              },
+              "context": {
+                "display_name": "Contexto",
+                "type": "str",
+                "value": "Prevalencia nacional de retraso del crecimiento 18,7 % (OMS 2006, HAZ < -2 DE). Región Norte: 24,6 %. Región Sur: 28,4 %. El modelo activo es XGBoost con AUC ≈ 0,77 y validación GroupKFold por región.",
+                "input_types": ["Message", "str"]
+              },
+              "question": {
+                "display_name": "Pregunta",
+                "type": "str",
+                "input_types": ["Message"]
+              }
+            },
+            "base_classes": ["Message"]
+          },
+          "value": ""
+        }
+      },
+      {
+        "id": "OpenAIModel-nutririsk",
+        "type": "OpenAIModel",
+        "position": { "x": 680, "y": 0 },
+        "data": {
+          "id": "OpenAIModel-nutririsk",
+          "type": "OpenAIModel",
+          "node": {
+            "display_name": "Modelo de lenguaje",
+            "description": "Requiere OPENAI_API_KEY. Puede sustituirse por un LLM local (Ollama).",
+            "template": {
+              "model_name": { "display_name": "Modelo", "type": "str", "value": "gpt-4o-mini" },
+              "temperature": { "display_name": "Temperatura", "type": "float", "value": 0.1 },
+              "api_key": { "display_name": "API Key", "type": "str", "value": "", "password": true }
+            },
+            "base_classes": ["LanguageModel"]
+          },
+          "value": ""
+        }
+      },
+      {
+        "id": "APIRequest-nutririsk",
+        "type": "APIRequest",
+        "position": { "x": 680, "y": 320 },
+        "data": {
+          "id": "APIRequest-nutririsk",
+          "type": "APIRequest",
+          "node": {
+            "display_name": "Herramienta NutriRisk API",
+            "description": "Consulta /api/v1/dashboard/overview, /geo/ranking y /fairness/{model_id}. Requiere un JWT de sesión en el encabezado Authorization.",
+            "template": {
+              "url": {
+                "display_name": "URL",
+                "type": "str",
+                "value": "http://127.0.0.1:8000/api/v1/dashboard/overview"
+              },
+              "method": { "display_name": "Método", "type": "str", "value": "GET" },
+              "headers": {
+                "display_name": "Encabezados",
+                "type": "dict",
+                "value": { "Authorization": "Bearer <token>", "X-N8N-Token": "nutririsk-n8n-token" }
+              }
+            },
+            "base_classes": ["Tool", "BaseTool"]
+          },
+          "value": ""
+        }
+      },
+      {
+        "id": "ChatOutput-nutririsk",
+        "type": "ChatOutput",
+        "position": { "x": 1020, "y": 120 },
+        "data": {
+          "id": "ChatOutput-nutririsk",
+          "type": "ChatOutput",
+          "node": {
+            "display_name": "Respuesta del analista",
+            "description": "Salida en lenguaje natural con cifras y recomendaciones.",
+            "template": {
+              "input_value": {
+                "display_name": "Respuesta",
+                "type": "str",
+                "input_types": ["Message"]
+              }
+            },
+            "base_classes": ["Message"]
+          },
+          "value": ""
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge-input-prompt",
+        "source": "ChatInput-nutririsk",
+        "target": "PromptTemplate-nutririsk",
+        "sourceHandle": "message",
+        "targetHandle": "question",
+        "data": { "sourceHandle": { "name": "message", "output_types": ["Message"] }, "targetHandle": { "fieldName": "question", "inputTypes": ["Message", "str"] } }
+      },
+      {
+        "id": "edge-prompt-model",
+        "source": "PromptTemplate-nutririsk",
+        "target": "OpenAIModel-nutririsk",
+        "sourceHandle": "prompt",
+        "targetHandle": "prompt",
+        "data": { "sourceHandle": { "name": "prompt", "output_types": ["Message"] }, "targetHandle": { "fieldName": "prompt", "inputTypes": ["Message"] } }
+      },
+      {
+        "id": "edge-model-output",
+        "source": "OpenAIModel-nutririsk",
+        "target": "ChatOutput-nutririsk",
+        "sourceHandle": "text_output",
+        "targetHandle": "input_value",
+        "data": { "sourceHandle": { "name": "text_output", "output_types": ["Message"] }, "targetHandle": { "fieldName": "input_value", "inputTypes": ["Message"] } }
+      },
+      {
+        "id": "edge-api-tool",
+        "source": "APIRequest-nutririsk",
+        "target": "PromptTemplate-nutririsk",
+        "sourceHandle": "data",
+        "targetHandle": "context",
+        "data": { "sourceHandle": { "name": "data", "output_types": ["Message", "str"] }, "targetHandle": { "fieldName": "context", "inputTypes": ["Message", "str"] } }
+      }
+    ]
+  },
+  "meta": {
+    "source": "NutriRisk AI",
+    "purpose": "Prototipado RAG del agente analista",
+    "notes": "Los datos servidos por la API son sintéticos en la demostración. Configure la URL y el token antes de ejecutar el flujo."
+  }
+}

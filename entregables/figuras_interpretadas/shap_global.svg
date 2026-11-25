@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" width="798.46659pt" height="600.992047pt" viewBox="0.0 0.0 798.46659 600.992047" version="1.1">
+ <metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-11-04T12:07:59.210106</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 517.992047  L 798.46659 517.992047  L 798.46659 0  L 0 0  z " style="fill: #ffffff" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 196.557813 441.147359  L 774.092783 441.147359  L 774.092783 30.429938  L 196.557813 30.429938  z " style="fill: #ffffff" />
+   </g>
+   <g id="patch_3">
+    <path d="M 196.557813 422.478386  L 278.327294 422.478386  L 278.327294 397.164523  L 196.557813 397.164523  z " clip-path="url(#pba3bf180c0)" style="fill: #167d9a" />
+   </g>
+   <g id="patch_4">
+    <path d="M 196.557813 390.836057  L 281.367968 390.836057  L 281.367968 365.522195  L 196.557813 365.522195  z " clip-path="url(#pba3bf180c0)" style="fill: #167d9a" />
+   </g>
+   <g id="patch_5">
+    <path d="M 196.557813 359.193729  L 282.518493 359.193729  L 282.518493 333.879866  L 196.557813 333.879866  z " clip-path="url(#pba3bf180c0)" style="fill: #167d9a" />
+   </g>
+   <g id="patch_6">
+    <path d="M 196.557813 327.551401  L 338.647695 327.551401  L 338.647695 302.237538  L 196.557813 302.237538  z " clip-path="url(#pba3bf180c0)" style="fill: #167d9a" />
+   </g>
+   <g id="patch_7">
+    <path d="M 196.557813 295.909072  L 349.002424 295.909072  L 349.002424 270.59521  L 196.557813 270.59521  z " clip-path="url(#pba3bf180c0)" style="fill: #167d9a" />
+   </g>
+   <g id="patch_8">
+    <path d="M 196.557813 264.266744  L 375.546687 264.266744  L 375.546687 238.952881  L 196.557813 238.952881  z " clip-path="url(#pba3bf180c0)" style="fill: #167d9a" />
+   </g>
+   <g id="patch_9">
+    <path d="M 196.557813 232.624416  L 382.860741 232.624416  L 382.860741 207.310553  L 196.557813 207.310553  z " clip-path="url(#pba3bf180c0)" style="fill: #167d9a" />
+   </g>
+   <g id="patch_10">
+    <path d="M 196.557813 200.982087  L 395.845242 200.982087  L 395.845242 175.668225  L 196.557813 175.668225  z " clip-path="url(#pba3bf180c0)" style="fill: #167d9a" />
+   </g>
+   <g id="patch_11">
+    <path d="M 196.557813 169.339759  L 411.706056 169.339759  L 411.706056 144.025896  L 196.557813 144.025896  z " clip-path="url(#pba3bf180c0)" style="fill: #167d9a" />
+   </g>
+   <g id="patch_12">
+    <path d="M 196.557813 137.697431  L 422.471686 137.697431  L 422.471686 112.383568  L 196.557813 112.383568  z " clip-path="url(#pba3bf180c0)" style="fill: #167d9a" />
+   </g>
+   <g id="patch_13">
+    <path d="M 196.557813 106.055102  L 453.042789 106.055102  L 453.042789 80.74124  L 196.557813 80.74124  z " clip-path="url(#pba3bf180c0)" style="fill: #167d9a" />
+   </g>
+   <g id="patch_14">
+    <path d="M 196.557813 74.412774  L 746.591118 74.412774  L 746.591118 49.098911  L 196.557813 49.098911  z " clip-path="url(#pba3bf180c0)" style="fill: #167d9a" />
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="ma0986ad2eb" d="M 0 0  L 0 3.5  " style="stroke: #000000; stroke-width: 0.8" />
+      </defs>
+      <g>
+       <use xlink:href="#ma0986ad2eb" x="196.557813" y="441.147359" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="196.557813" y="456.504781" transform="rotate(-0 196.557813 456.504781)">0.00</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#ma0986ad2eb" x="278.738196" y="441.147359" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="278.738196" y="456.504781" transform="rotate(-0 278.738196 456.504781)">0.01</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#ma0986ad2eb" x="360.918579" y="441.147359" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="360.918579" y="456.504781" transform="rotate(-0 360.918579 456.504781)">0.02</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#ma0986ad2eb" x="443.098962" y="441.147359" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="443.098962" y="456.504781" transform="rotate(-0 443.098962 456.504781)">0.03</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#ma0986ad2eb" x="525.279346" y="441.147359" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="525.279346" y="456.504781" transform="rotate(-0 525.279346 456.504781)">0.04</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#ma0986ad2eb" x="607.459729" y="441.147359" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="607.459729" y="456.504781" transform="rotate(-0 607.459729 456.504781)">0.05</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#ma0986ad2eb" x="689.640112" y="441.147359" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="689.640112" y="456.504781" transform="rotate(-0 689.640112 456.504781)">0.06</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#ma0986ad2eb" x="771.820496" y="441.147359" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="771.820496" y="456.504781" transform="rotate(-0 771.820496 456.504781)">0.07</text>
+     </g>
+    </g>
+    <g id="text_9">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="485.325298" y="471.945641" transform="rotate(-0 485.325298 471.945641)">Contribución absoluta media SHAP almacenada</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_9">
+      <defs>
+       <path id="m96eb06818f" d="M 0 0  L -3.5 0  " style="stroke: #000000; stroke-width: 0.8" />
+      </defs>
+      <g>
+       <use xlink:href="#m96eb06818f" x="196.557813" y="409.821454" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="189.557813" y="414.000595" transform="rotate(-0 189.557813 414.000595)">Inseguridad alimentaria (hogar)</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m96eb06818f" x="196.557813" y="378.179126" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="189.557813" y="382.358267" transform="rotate(-0 189.557813 382.358267)">Peso al nacer (g)</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#m96eb06818f" x="196.557813" y="346.536798" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="189.557813" y="350.715509" transform="rotate(-0 189.557813 350.715509)">NDVI</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m96eb06818f" x="196.557813" y="314.894469" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="189.557813" y="319.07361" transform="rotate(-0 189.557813 319.07361)">Altitud (m)</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#m96eb06818f" x="196.557813" y="283.252141" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_14">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="189.557813" y="287.651282" transform="rotate(-0 189.557813 287.651282)">Vacunación completa</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m96eb06818f" x="196.557813" y="251.609813" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_15">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="189.557813" y="256.008953" transform="rotate(-0 189.557813 256.008953)">Dieta mínima diversa</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_15">
+      <g>
+       <use xlink:href="#m96eb06818f" x="196.557813" y="219.967484" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_16">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="189.557813" y="224.146625" transform="rotate(-0 189.557813 224.146625)">Agua mejorada</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m96eb06818f" x="196.557813" y="188.325156" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_17">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="189.557813" y="192.504297" transform="rotate(-0 189.557813 192.504297)">Diarrea reciente</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_17">
+      <g>
+       <use xlink:href="#m96eb06818f" x="196.557813" y="156.682828" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_18">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="189.557813" y="160.861968" transform="rotate(-0 189.557813 160.861968)">Saneamiento mejorado</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m96eb06818f" x="196.557813" y="125.040499" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_19">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="189.557813" y="129.43964" transform="rotate(-0 189.557813 129.43964)">Educación materna (años)</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_19">
+      <g>
+       <use xlink:href="#m96eb06818f" x="196.557813" y="93.398171" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_20">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="189.557813" y="97.797312" transform="rotate(-0 189.557813 97.797312)">Precipitación (mm)</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#m96eb06818f" x="196.557813" y="61.755843" style="stroke: #000000; stroke-width: 0.8" />
+      </g>
+     </g>
+     <g id="text_21">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="189.557813" y="65.934983" transform="rotate(-0 189.557813 65.934983)">Quintil de riqueza</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_15">
+    <path d="M 196.557813 441.147359  L 196.557813 30.429938  " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="patch_16">
+    <path d="M 196.557813 441.147359  L 774.092783 441.147359  " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square" />
+   </g>
+   <g id="text_22">
+    <text style="font-size: 13.2px; font-family: 'DejaVu Sans'; text-anchor: middle" x="485.325298" y="24.429938" transform="rotate(-0 485.325298 24.429938)">SHAP operativo · NutriRisk CatBoost</text>
+   </g>
+  </g>
+  <g id="text_23">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #526173" x="400.157812" y="501.429938" transform="rotate(-0 400.157812 501.429938)">NutriRisk AI · Datos sintéticos · Evaluación exploratoria</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pba3bf180c0">
+   <rect x="196.557813" y="30.429938" width="577.534971" height="410.717422" />
+  </clipPath>
+ </defs>
+<rect x="0" y="517.992047" width="798.46659" height="83" fill="white" /><g font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#213744"><text x="22" y="542.992047">Cómo leer: Las barras muestran contribuciones absolutas medias SHAP del clasificador operativo.</text><text x="22" y="561.992047">Interpretación: Una barra mayor identifica variables que el modelo utiliza más al producir sus predicciones.</text><text x="22" y="580.992047">Alcance: Este resumen pertenece a otro objetivo que la comparación territorial; no constituye efecto causal ni recomendación clínica.</text></g></svg>

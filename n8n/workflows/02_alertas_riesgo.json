@@ -1,0 +1,108 @@
+{
+  "name": "NutriRisk · 02 Alertas de riesgo",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [{ "field": "cronExpression", "expression": "0 6 * * *" }]
+        }
+      },
+      "id": "b1c1a2d4-0002-4c11-9a02-000000000001",
+      "name": "Cada día 06:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [-240, 0]
+    },
+    {
+      "parameters": {
+        "url": "={{$env.NUTRIRISK_API_URL || 'http://api:8000'}}/api/v1/alerts/n8n/evaluate",
+        "method": "POST",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [{ "name": "X-N8N-Token", "value": "={{$env.NUTRIRISK_API_TOKEN || 'nutririsk-n8n-token'}}" }]
+        },
+        "options": { "timeout": 120000 }
+      },
+      "id": "b1c1a2d4-0002-4c11-9a02-000000000002",
+      "name": "Evaluar reglas de alerta",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [0, 0],
+      "notes": "Ejecuta las reglas de riesgo territorial, desempeño del modelo y calidad de datos."
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "loose" },
+          "conditions": [
+            {
+              "id": "cond-1",
+              "leftValue": "={{$json.created}}",
+              "rightValue": 0,
+              "operator": { "type": "number", "operation": "larger" }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "b1c1a2d4-0002-4c11-9a02-000000000003",
+      "name": "¿Nuevas alertas?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [240, 0]
+    },
+    {
+      "parameters": {
+        "fromEmail": "alertas@nutririsk.local",
+        "toEmail": "={{$env.NUTRIRISK_ALERT_EMAIL || 'equipo@nutririsk.local'}}",
+        "subject": "NutriRisk · Nuevas alertas operativas",
+        "emailFormat": "text",
+        "text": "=Se generaron {{$json.created}} alertas nuevas.\n\nReglas activadas:\n{{ JSON.stringify($json.rules, null, 2) }}\n\nRevise el tablero: {{$env.NUTRIRISK_WEB_URL || 'http://localhost:8080'}}"
+      },
+      "id": "b1c1a2d4-0002-4c11-9a02-000000000004",
+      "name": "Notificar alertas",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [520, -100]
+    },
+    {
+      "parameters": {
+        "url": "={{$env.NUTRIRISK_API_URL || 'http://api:8000'}}/api/v1/alerts/n8n/evaluate",
+        "method": "POST",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [{ "name": "X-N8N-Token", "value": "={{$env.NUTRIRISK_API_TOKEN || 'nutririsk-n8n-token'}}" }]
+        },
+        "options": { "timeout": 60000 }
+      },
+      "id": "b1c1a2d4-0002-4c11-9a02-000000000005",
+      "name": "Registrar verificación",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [520, 120],
+      "notes": "Mantiene la marca temporal de la última verificación sin generar duplicados."
+    }
+  ],
+  "connections": {
+    "Cada día 06:00": {
+      "main": [[{ "node": "Evaluar reglas de alerta", "type": "main", "index": 0 }]]
+    },
+    "Evaluar reglas de alerta": {
+      "main": [[{ "node": "¿Nuevas alertas?", "type": "main", "index": 0 }]]
+    },
+    "¿Nuevas alertas?": {
+      "main": [
+        [{ "node": "Notificar alertas", "type": "main", "index": 0 }],
+        [{ "node": "Registrar verificación", "type": "main", "index": 0 }]
+      ]
+    }
+  },
+  "active": false,
+  "settings": { "executionOrder": "v1" },
+  "pinData": {},
+  "meta": {
+    "description": "Evaluación diaria de reglas de alerta con notificación por correo.",
+    "templateCredsSetupCompleted": false
+  },
+  "tags": [{ "name": "NutriRisk" }, { "name": "Alertas" }]
+}

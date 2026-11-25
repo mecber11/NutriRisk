@@ -1,0 +1,18 @@
+{
+  "status": "PASSED",
+  "run_id": "20261106T194207-e0ed9fcf",
+  "count": 11,
+  "checks": [
+    "recomputed_metrics_baseline_mean",
+    "recomputed_metrics_baseline_persistence",
+    "recomputed_metrics_catboost",
+    "recomputed_metrics_cnn_lstm",
+    "recomputed_metrics_random_forest",
+    "recomputed_metrics_spatial_xgboost",
+    "recomputed_metrics_xgboost",
+    "independent_friedman_from_predictions",
+    "ten_recomputed_wilcoxon_statistics",
+    "holm_verified_with_statsmodels",
+    "target_excluded_and_chronology_checked"
+  ]
+}

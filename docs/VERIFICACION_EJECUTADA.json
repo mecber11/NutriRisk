@@ -1,0 +1,187 @@
+{
+  "passed": 44,
+  "run_id": "20261104T170319-269cbcbc",
+  "figures": 10,
+  "integrations": {
+    "mlflow": "logged",
+    "minio": "not_configured"
+  },
+  "checks": [
+    {
+      "path": "/research/audit",
+      "status": 200
+    },
+    {
+      "path": "/research/workflows",
+      "status": 200
+    },
+    {
+      "path": "/research/workflows/WF-01_adquisicion.json",
+      "status": 200
+    },
+    {
+      "path": "/research/workflows/WF-02_calidad.json",
+      "status": 200
+    },
+    {
+      "path": "/research/workflows/WF-03_predicciones.json",
+      "status": 200
+    },
+    {
+      "path": "/research/workflows/WF-04_alertas.json",
+      "status": 200
+    },
+    {
+      "path": "/research/workflows/WF-05_reportes.json",
+      "status": 200
+    },
+    {
+      "path": "/research/workflows/WF-06_monitoreo.json",
+      "status": 200
+    },
+    {
+      "path": "/research/runs",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/comparacion_modelos.png",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/comparacion_modelos.svg",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/comparacion_modelos.pdf",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/mapa_calor_regiones.png",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/mapa_calor_regiones.svg",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/mapa_calor_regiones.pdf",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/observado_estimado.png",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/observado_estimado.svg",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/observado_estimado.pdf",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/curvas_cnn_lstm.png",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/curvas_cnn_lstm.svg",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/curvas_cnn_lstm.pdf",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/protocolo_experimental.png",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/protocolo_experimental.svg",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/protocolo_experimental.pdf",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/roc_precision_recall.png",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/roc_precision_recall.svg",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/roc_precision_recall.pdf",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/matrices_confusion.png",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/matrices_confusion.svg",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/matrices_confusion.pdf",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/calibracion.png",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/calibracion.svg",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/calibracion.pdf",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/shap_global.png",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/shap_global.svg",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/shap_global.pdf",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/arquitectura.png",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/arquitectura.svg",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/arquitectura.pdf",
+      "status": 200
+    },
+    {
+      "path": "/research/runs/20261104T170319-269cbcbc/files/figuras_alta_calidad.zip",
+      "status": 200
+    },
+    {
+      "operation": "quality",
+      "status": 200
+    },
+    {
+      "operation": "monitor",
+      "status": 200
+    },
+    {
+      "operation": "LangChain evidence_search",
+      "status": 200
+    }
+  ]
+}

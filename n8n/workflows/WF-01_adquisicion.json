@@ -1,0 +1,92 @@
+{
+  "name": "NutriRisk WF-01 · Descarga de indicador público World Bank",
+  "nodes": [
+    {
+      "id": "c3b2a689-e1ed-4a16-902c-567e1b875b54",
+      "name": "Programación",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 5 * * 1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "30d78679-82c4-4a1b-b63a-00c32402e9e0",
+      "name": "Ejecución manual",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        180
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "985ff343-d0b4-4ab2-ae81-2d21e1bde60f",
+      "name": "Ejecutar operación",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        280,
+        0
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.NUTRIRISK_API_URL + '/api/v1/automation/acquire' }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-N8N-Token",
+              "value": "={{ $env.NUTRIRISK_API_TOKEN }}"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 300000
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Programación": {
+      "main": [
+        [
+          {
+            "node": "Ejecutar operación",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ejecución manual": {
+      "main": [
+        [
+          {
+            "node": "Ejecutar operación",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "tags": []
+}

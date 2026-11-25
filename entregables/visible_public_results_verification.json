@@ -1,0 +1,15 @@
+{
+  "status": "PASSED",
+  "checks": [
+    "default_view_recall_precision_f1_auc_pr_and_ten_real_curve_paths",
+    "confusion_counts_match_real_catboost_and_visible_confidence_intervals",
+    "actual_public_rows_pagination_country_year_filters_and_ten_official_sources",
+    "download_is_byte_identical_to_acquired_public_dataset",
+    "classifier_hyperparameters_and_true_logloss_trials_visible",
+    "eleven_real_figures_with_individual_notes_and_verified_600dpi_png_download",
+    "mobile_classification_has_no_page_overflow",
+    "no_browser_javascript_errors"
+  ],
+  "count": 8,
+  "browser_errors": []
+}

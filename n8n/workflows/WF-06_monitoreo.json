@@ -1,0 +1,92 @@
+{
+  "name": "NutriRisk WF-06 · Auditoría y monitoreo de modelos",
+  "nodes": [
+    {
+      "id": "29bcc4d5-eaf2-4646-a56b-de16ae6ccf6b",
+      "name": "Programación",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 */6 * * *"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fcff5732-8bfb-4e91-bae4-389981d509c6",
+      "name": "Ejecución manual",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        180
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "eec98511-5152-4717-a9fb-8b17df3db847",
+      "name": "Ejecutar operación",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        280,
+        0
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.NUTRIRISK_API_URL + '/api/v1/automation/monitor' }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-N8N-Token",
+              "value": "={{ $env.NUTRIRISK_API_TOKEN }}"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 300000
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Programación": {
+      "main": [
+        [
+          {
+            "node": "Ejecutar operación",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ejecución manual": {
+      "main": [
+        [
+          {
+            "node": "Ejecutar operación",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "tags": []
+}

@@ -1,0 +1,92 @@
+{
+  "name": "NutriRisk WF-03 · Predicciones programadas con el modelo activo",
+  "nodes": [
+    {
+      "id": "c0ee5afa-a5b7-494c-b611-80737ff73ab1",
+      "name": "Programación",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "30 5 * * *"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "f6c351fb-bf1f-413d-9e99-7d072a7cffe8",
+      "name": "Ejecución manual",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        180
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "c0f85f73-66c5-4ddd-91b2-8287ef5887a7",
+      "name": "Ejecutar operación",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        280,
+        0
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.NUTRIRISK_API_URL + '/api/v1/automation/predict' }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-N8N-Token",
+              "value": "={{ $env.NUTRIRISK_API_TOKEN }}"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 300000
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Programación": {
+      "main": [
+        [
+          {
+            "node": "Ejecutar operación",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ejecución manual": {
+      "main": [
+        [
+          {
+            "node": "Ejecutar operación",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "tags": []
+}

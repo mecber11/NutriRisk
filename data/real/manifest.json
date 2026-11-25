@@ -1,0 +1,765 @@
+﻿{
+    "dataset_id":  "worldbank-jme-country-panel",
+    "created_utc":  "2026-11-06T19:27:18.1838503Z",
+    "is_synthetic":  false,
+    "unit":  "country-year",
+    "outcome":  "JME modeled national prevalence of stunting, percentage children under 5; official estimates derived from surveys, not individual observations",
+    "countries":  161,
+    "rows":  4025,
+    "years":  [
+                  2000,
+                  2001,
+                  2002,
+                  2003,
+                  2004,
+                  2005,
+                  2006,
+                  2007,
+                  2008,
+                  2009,
+                  2010,
+                  2011,
+                  2012,
+                  2013,
+                  2014,
+                  2015,
+                  2016,
+                  2017,
+                  2018,
+                  2019,
+                  2020,
+                  2021,
+                  2022,
+                  2023,
+                  2024
+              ],
+    "target":  "stunting_prevalence_pct",
+    "target_scale":  "percentage 0 to 100",
+    "predictors":  [
+                       "gdp_per_capita_constant_usd",
+                       "basic_drinking_water_pct",
+                       "basic_sanitation_pct",
+                       "electricity_access_pct",
+                       "urban_population_pct",
+                       "population_density",
+                       "fertility_births_per_woman",
+                       "female_secondary_enrollment_pct",
+                       "pm25_exposure"
+                   ],
+    "indicators":  {
+                       "stunting_prevalence_pct":  "SH.STA.STNT.ME.ZS",
+                       "gdp_per_capita_constant_usd":  "NY.GDP.PCAP.KD",
+                       "basic_drinking_water_pct":  "SH.H2O.BASW.ZS",
+                       "basic_sanitation_pct":  "SH.STA.BASS.ZS",
+                       "electricity_access_pct":  "EG.ELC.ACCS.ZS",
+                       "urban_population_pct":  "SP.URB.TOTL.IN.ZS",
+                       "population_density":  "EN.POP.DNST",
+                       "fertility_births_per_woman":  "SP.DYN.TFRT.IN",
+                       "female_secondary_enrollment_pct":  "SE.SEC.ENRR.FE",
+                       "pm25_exposure":  "EN.ATM.PM25.MC.M3"
+                   },
+    "indicator_metadata":  {
+                               "stunting_prevalence_pct":  [
+                                                               {
+                                                                   "id":  "SH.STA.STNT.ME.ZS",
+                                                                   "name":  "Prevalence of stunting, height for age (modeled estimate, % of children under 5)",
+                                                                   "unit":  "",
+                                                                   "source":  {
+                                                                                  "id":  "2",
+                                                                                  "value":  "World Development Indicators"
+                                                                              },
+                                                                   "sourceNote":  "Prevalence of stunting is the percentage of children under age 5 whose height for age is more than two standard deviations below the median for the international reference population ages 0-59 months. For children up to two years old height is measured by recumbent length. For older children height is measured by stature while standing. The data are based on the WHO\u0027s 2006 Child Growth Standards.",
+                                                                   "sourceOrganization":  "Joint child Malnutrition Estimates (JME), UN Children\u0027s Fund (UNICEF), uri: https://www.who.int/data/gho/data/themes/topics/joint-child-malnutrition-estimates-unicef-who-wb, publisher: JME;\nWorld Health Organization (WHO), uri: https://www.who.int/data/gho/data/themes/topics/joint-child-malnutrition-estimates-unicef-who-wb, note: Joint child Malnutrition Estimates (JME), publisher: JME;\nWorld Bank (WB), uri: https://www.who.int/data/gho/data/themes/topics/joint-child-malnutrition-estimates-unicef-who-wb, note: Joint child Malnutrition Estimates (JME), publisher: JME",
+                                                                   "topics":  [
+                                                                                  {
+                                                                                      "id":  "8",
+                                                                                      "value":  "Health "
+                                                                                  }
+                                                                              ]
+                                                               }
+                                                           ],
+                               "gdp_per_capita_constant_usd":  [
+                                                                   {
+                                                                       "id":  "NY.GDP.PCAP.KD",
+                                                                       "name":  "GDP per capita (constant 2015 US$)",
+                                                                       "unit":  "",
+                                                                       "source":  {
+                                                                                      "id":  "2",
+                                                                                      "value":  "World Development Indicators"
+                                                                                  },
+                                                                       "sourceNote":  "Gross domestic product is the total income earned through the production of goods and services in an economic territory during an accounting period. It can be measured in three different ways: using either the expenditure approach, the income approach, or the production approach. The core indicator has been divided by the general population to achieve a per capita estimate.This indicator is expressed in constant prices, meaning the series has been adjusted to account for price changes over time. The reference year for this adjustment is 2015. This indicator is expressed in United States dollars.",
+                                                                       "sourceOrganization":  "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, World Bank (WB)",
+                                                                       "topics":  [
+                                                                                      {
+                                                                                          "id":  "3",
+                                                                                          "value":  "Economy \u0026 Growth"
+                                                                                      }
+                                                                                  ]
+                                                                   }
+                                                               ],
+                               "basic_drinking_water_pct":  [
+                                                                {
+                                                                    "id":  "SH.H2O.BASW.ZS",
+                                                                    "name":  "People using at least basic drinking water services (% of population)",
+                                                                    "unit":  "",
+                                                                    "source":  {
+                                                                                   "id":  "2",
+                                                                                   "value":  "World Development Indicators"
+                                                                               },
+                                                                    "sourceNote":  "The percentage of people using at least basic water services.  This indicator encompasses both people using basic water services as well as those using safely managed water services.  Basic drinking water services is defined as drinking water from an improved source, provided collection time is not more than 30 minutes for a round trip.  Improved water sources include piped water, boreholes or tubewells, protected dug wells, protected springs, and packaged or delivered water.",
+                                                                    "sourceOrganization":  "WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, publisher: WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene (washdata.org), date accessed: 2025-09-30, date published: 2025-08-25;\nUN Children\u0027s Fund (UNICEF), uri: washdata.org, note: WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene",
+                                                                    "topics":  [
+                                                                                   {
+                                                                                       "id":  "8",
+                                                                                       "value":  "Health "
+                                                                                   },
+                                                                                   {
+                                                                                       "id":  "6",
+                                                                                       "value":  "Environment "
+                                                                                   }
+                                                                               ]
+                                                                }
+                                                            ],
+                               "basic_sanitation_pct":  [
+                                                            {
+                                                                "id":  "SH.STA.BASS.ZS",
+                                                                "name":  "People using at least basic sanitation services (% of population)",
+                                                                "unit":  "",
+                                                                "source":  {
+                                                                               "id":  "2",
+                                                                               "value":  "World Development Indicators"
+                                                                           },
+                                                                "sourceNote":  "The percentage of people using at least basic sanitation services, that is, improved sanitation facilities that are not shared with other households.  This indicator encompasses both people using basic sanitation services as well as those using safely managed sanitation services.   Improved sanitation facilities include flush/pour flush to piped sewer systems, septic tanks or pit latrines; ventilated improved pit latrines, composting toilets or pit latrines with slabs.",
+                                                                "sourceOrganization":  "WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene, World Health Organization (WHO), uri: washdata.org, publisher: WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene (washdata.org), date accessed: 2025-09-30, date published: 2025-08-25;\nUN Children\u0027s Fund (UNICEF), uri: washdata.org, note: WHO/UNICEF Joint Monitoring Programme (JMP) for Water Supply, Sanitation and Hygiene",
+                                                                "topics":  [
+                                                                               {
+                                                                                   "id":  "8",
+                                                                                   "value":  "Health "
+                                                                               },
+                                                                               {
+                                                                                   "id":  "6",
+                                                                                   "value":  "Environment "
+                                                                               }
+                                                                           ]
+                                                            }
+                                                        ],
+                               "electricity_access_pct":  [
+                                                              {
+                                                                  "id":  "EG.ELC.ACCS.ZS",
+                                                                  "name":  "Access to electricity (% of population)",
+                                                                  "unit":  "",
+                                                                  "source":  {
+                                                                                 "id":  "2",
+                                                                                 "value":  "World Development Indicators"
+                                                                             },
+                                                                  "sourceNote":  "Access to electricity is the percentage of population with access to electricity. Electrification data are collected from industry, national surveys and international sources.",
+                                                                  "sourceOrganization":  "SDG 7.1.1 Electrification Dataset, World Bank (WB), uri: https://trackingsdg7.esmap.org/downloads, note: Data is downloaded from ESMAP website. Data is released when a new Tracking SDG7 report is released., publisher: World Bank (WB), date accessed: 2024-05-16, date published: 2023",
+                                                                  "topics":  [
+                                                                                 {
+                                                                                     "id":  "5",
+                                                                                     "value":  "Energy \u0026 Mining "
+                                                                                 },
+                                                                                 {
+                                                                                     "id":  "19",
+                                                                                     "value":  "Climate Change"
+                                                                                 },
+                                                                                 {
+                                                                                     "id":  "6",
+                                                                                     "value":  "Environment "
+                                                                                 }
+                                                                             ]
+                                                              }
+                                                          ],
+                               "urban_population_pct":  [
+                                                            {
+                                                                "id":  "SP.URB.TOTL.IN.ZS",
+                                                                "name":  "Urban population (% of total population)",
+                                                                "unit":  "",
+                                                                "source":  {
+                                                                               "id":  "2",
+                                                                               "value":  "World Development Indicators"
+                                                                           },
+                                                                "sourceNote":  "Urban population refers to people living in urban areas as defined by national statistical offices. The data are collected and smoothed by United Nations Population Division.",
+                                                                "sourceOrganization":  "World Urbanization Prospects, United Nations (UN), uri: https://population.un.org/wup/, note: United Nations Population Division\u0027s World Urbanization Prospects, National definitions, publisher: UN Population Division",
+                                                                "topics":  [
+                                                                               {
+                                                                                   "id":  "19",
+                                                                                   "value":  "Climate Change"
+                                                                               },
+                                                                               {
+                                                                                   "id":  "16",
+                                                                                   "value":  "Urban Development "
+                                                                               }
+                                                                           ]
+                                                            }
+                                                        ],
+                               "population_density":  [
+                                                          {
+                                                              "id":  "EN.POP.DNST",
+                                                              "name":  "Population density (people per sq. km of land area)",
+                                                              "unit":  "",
+                                                              "source":  {
+                                                                             "id":  "2",
+                                                                             "value":  "World Development Indicators"
+                                                                         },
+                                                              "sourceNote":  "Population density is midyear population divided by land area in square kilometers. Population is based on the de facto definition of population, which counts all residents regardless of legal status or citizenship--except for refugees not permanently settled in the country of asylum, who are generally considered part of the population of their country of origin. Land area is a country\u0027s total area, excluding area under inland water bodies, national claims to continental shelf, and exclusive economic zones. In most cases the definition of inland water bodies includes major rivers and lakes.",
+                                                              "sourceOrganization":  "FAO population estimates, Food and Agriculture Organization of the United Nations (FAO), publisher: Food and Agriculture Organization of the United Nations (FAO);\nWorld Bank population estimates, World Bank (WB), publisher: World Bank (WB)",
+                                                              "topics":  [
+                                                                             {
+                                                                                 "id":  "16",
+                                                                                 "value":  "Urban Development "
+                                                                             }
+                                                                         ]
+                                                          }
+                                                      ],
+                               "fertility_births_per_woman":  [
+                                                                  {
+                                                                      "id":  "SP.DYN.TFRT.IN",
+                                                                      "name":  "Fertility rate, total (births per woman)",
+                                                                      "unit":  "",
+                                                                      "source":  {
+                                                                                     "id":  "2",
+                                                                                     "value":  "World Development Indicators"
+                                                                                 },
+                                                                      "sourceNote":  "Total fertility rate represents the number of children that would be born to a woman if she were to live to the end of her childbearing years and bear children in accordance with age-specific fertility rates of the specified year.",
+                                                                      "sourceOrganization":  "World Population Prospects, United Nations (UN), publisher: UN Population Division;\nStatistical databases and publications from national statistical offices, National Statistical Offices (NSOs);\nDemographic Statistics, Eurostat (ESTAT)",
+                                                                      "topics":  [
+                                                                                     {
+                                                                                         "id":  "8",
+                                                                                         "value":  "Health "
+                                                                                     },
+                                                                                     {
+                                                                                         "id":  "17",
+                                                                                         "value":  "Gender"
+                                                                                     }
+                                                                                 ]
+                                                                  }
+                                                              ],
+                               "female_secondary_enrollment_pct":  [
+                                                                       {
+                                                                           "id":  "SE.SEC.ENRR.FE",
+                                                                           "name":  "School enrollment, secondary, female (% gross)",
+                                                                           "unit":  "",
+                                                                           "source":  {
+                                                                                          "id":  "2",
+                                                                                          "value":  "World Development Indicators"
+                                                                                      },
+                                                                           "sourceNote":  "Gross enrollment ratio is the ratio of total enrollment, regardless of age, to the population of the age group that officially corresponds to the level of education shown. Secondary education completes the provision of basic education that began at the primary level, and aims at laying the foundations for lifelong learning and human development, by offering more subject- or skill-oriented instruction using more specialized teachers.",
+                                                                           "sourceOrganization":  "Data API, UN Educational, Scientific and Cultural Organization (UNESCO), uri: https://databrowser.uis.unesco.org/resources, note: The data are obtained through the UIS API.  Detailed documentation is available at: https://api.uis.unesco.org/api/public/documentation/, publisher: UNESCO Institute for Statistics (UIS), type: Bulk file (csv), date accessed: 2026-03-19, date published: 2026-02",
+                                                                           "topics":  [
+                                                                                          {
+                                                                                              "id":  "4",
+                                                                                              "value":  "Education "
+                                                                                          },
+                                                                                          {
+                                                                                              "id":  "17",
+                                                                                              "value":  "Gender"
+                                                                                          }
+                                                                                      ]
+                                                                       }
+                                                                   ],
+                               "pm25_exposure":  [
+                                                     {
+                                                         "id":  "EN.ATM.PM25.MC.M3",
+                                                         "name":  "PM2.5 air pollution, mean annual exposure (micrograms per cubic meter)",
+                                                         "unit":  "",
+                                                         "source":  {
+                                                                        "id":  "2",
+                                                                        "value":  "World Development Indicators"
+                                                                    },
+                                                         "sourceNote":  "Population-weighted exposure to ambient PM2.5 pollution is defined as the average level of exposure of a nation\u0027s population to concentrations of suspended particles measuring less than 2.5 microns in aerodynamic diameter, which are capable of penetrating deep into the respiratory tract and causing severe health damage. Exposure is calculated by weighting mean annual concentrations of PM2.5 by population in both urban and rural areas.",
+                                                         "sourceOrganization":  "Global Burden of Disease Study 2023 (GBD 2023) Air Pollution Exposure Estimates and Risk Curves 1990-2023, GBD Collaborator Network, uri: https://ghdx.healthdata.org/record/ihme-data/gbd-2023-air-pollution-exposure-estimates-1990-2023, note: Need to create account to retrieve data., publisher: Institute for Health Metrics and Evaluation (IHME), date accessed: 2026-04-03, date published: 2026-01-23",
+                                                         "topics":  [
+                                                                        {
+                                                                            "id":  "16",
+                                                                            "value":  "Urban Development "
+                                                                        },
+                                                                        {
+                                                                            "id":  "6",
+                                                                            "value":  "Environment "
+                                                                        }
+                                                                    ]
+                                                     }
+                                                 ]
+                           },
+    "missingness":  {
+                        "stunting_prevalence_pct":  {
+                                                        "fraction":  0,
+                                                        "missing":  0
+                                                    },
+                        "gdp_per_capita_constant_usd":  {
+                                                            "fraction":  0.020621118012422359,
+                                                            "missing":  83
+                                                        },
+                        "basic_drinking_water_pct":  {
+                                                         "fraction":  0.021614906832298136,
+                                                         "missing":  87
+                                                     },
+                        "basic_sanitation_pct":  {
+                                                     "fraction":  0.023602484472049691,
+                                                     "missing":  95
+                                                 },
+                        "electricity_access_pct":  {
+                                                       "fraction":  0.0062111801242236021,
+                                                       "missing":  25
+                                                   },
+                        "urban_population_pct":  {
+                                                     "fraction":  0,
+                                                     "missing":  0
+                                                 },
+                        "population_density":  {
+                                                   "fraction":  0.008944099378881987,
+                                                   "missing":  36
+                                               },
+                        "fertility_births_per_woman":  {
+                                                           "fraction":  0,
+                                                           "missing":  0
+                                                       },
+                        "female_secondary_enrollment_pct":  {
+                                                                "fraction":  0.32745341614906831,
+                                                                "missing":  1318
+                                                            },
+                        "pm25_exposure":  {
+                                              "fraction":  0.045962732919254658,
+                                              "missing":  185
+                                          }
+                    },
+    "yearly_coverage":  [
+                            {
+                                "complete_predictor_rows":  88,
+                                "countries":  161,
+                                "year":  2000
+                            },
+                            {
+                                "complete_predictor_rows":  106,
+                                "countries":  161,
+                                "year":  2001
+                            },
+                            {
+                                "complete_predictor_rows":  102,
+                                "countries":  161,
+                                "year":  2002
+                            },
+                            {
+                                "complete_predictor_rows":  99,
+                                "countries":  161,
+                                "year":  2003
+                            },
+                            {
+                                "complete_predictor_rows":  107,
+                                "countries":  161,
+                                "year":  2004
+                            },
+                            {
+                                "complete_predictor_rows":  108,
+                                "countries":  161,
+                                "year":  2005
+                            },
+                            {
+                                "complete_predictor_rows":  108,
+                                "countries":  161,
+                                "year":  2006
+                            },
+                            {
+                                "complete_predictor_rows":  111,
+                                "countries":  161,
+                                "year":  2007
+                            },
+                            {
+                                "complete_predictor_rows":  109,
+                                "countries":  161,
+                                "year":  2008
+                            },
+                            {
+                                "complete_predictor_rows":  107,
+                                "countries":  161,
+                                "year":  2009
+                            },
+                            {
+                                "complete_predictor_rows":  112,
+                                "countries":  161,
+                                "year":  2010
+                            },
+                            {
+                                "complete_predictor_rows":  115,
+                                "countries":  161,
+                                "year":  2011
+                            },
+                            {
+                                "complete_predictor_rows":  110,
+                                "countries":  161,
+                                "year":  2012
+                            },
+                            {
+                                "complete_predictor_rows":  104,
+                                "countries":  161,
+                                "year":  2013
+                            },
+                            {
+                                "complete_predictor_rows":  110,
+                                "countries":  161,
+                                "year":  2014
+                            },
+                            {
+                                "complete_predictor_rows":  115,
+                                "countries":  161,
+                                "year":  2015
+                            },
+                            {
+                                "complete_predictor_rows":  113,
+                                "countries":  161,
+                                "year":  2016
+                            },
+                            {
+                                "complete_predictor_rows":  106,
+                                "countries":  161,
+                                "year":  2017
+                            },
+                            {
+                                "complete_predictor_rows":  102,
+                                "countries":  161,
+                                "year":  2018
+                            },
+                            {
+                                "complete_predictor_rows":  104,
+                                "countries":  161,
+                                "year":  2019
+                            },
+                            {
+                                "complete_predictor_rows":  105,
+                                "countries":  161,
+                                "year":  2020
+                            },
+                            {
+                                "complete_predictor_rows":  109,
+                                "countries":  161,
+                                "year":  2021
+                            },
+                            {
+                                "complete_predictor_rows":  102,
+                                "countries":  161,
+                                "year":  2022
+                            },
+                            {
+                                "complete_predictor_rows":  101,
+                                "countries":  161,
+                                "year":  2023
+                            },
+                            {
+                                "complete_predictor_rows":  0,
+                                "countries":  161,
+                                "year":  2024
+                            }
+                        ],
+    "sources":  [
+                    {
+                        "file":  "raw/countries.json",
+                        "url":  "https://api.worldbank.org/v2/country?format=json\u0026per_page=400",
+                        "sha256":  "c9acf3932785191a649cbc04c3056af4cf64a236e5c3b49d49be25ddb0440bce",
+                        "bytes":  113954,
+                        "retrieved_utc":  "2026-11-06T19:25:24.1786690Z",
+                        "api_metadata":  {
+                                             "page":  1,
+                                             "pages":  1,
+                                             "per_page":  "400",
+                                             "total":  296
+                                         }
+                    },
+                    {
+                        "file":  "raw/SH.STA.STNT.ME.ZS.json",
+                        "url":  "https://api.worldbank.org/v2/country/all/indicator/SH.STA.STNT.ME.ZS?format=json\u0026per_page=20000\u0026date=2000:2024",
+                        "sha256":  "6e00cd13d7bc01445dfe2eb210bc866298e505136da03ccb420eab203eb8be73",
+                        "bytes":  1780717,
+                        "retrieved_utc":  "2026-11-06T19:25:26.3123325Z",
+                        "api_metadata":  {
+                                             "page":  1,
+                                             "pages":  1,
+                                             "per_page":  20000,
+                                             "total":  6650,
+                                             "sourceid":  "2",
+                                             "lastupdated":  "2026-10-08"
+                                         }
+                    },
+                    {
+                        "file":  "raw/SH.STA.STNT.ME.ZS_metadata.json",
+                        "url":  "https://api.worldbank.org/v2/indicator/SH.STA.STNT.ME.ZS?format=json\u0026per_page=100",
+                        "sha256":  "6b35c9370771bad1964d15475944f4cadafef272f4a2e4fc3ce03ca6d5dab19c",
+                        "bytes":  1322,
+                        "retrieved_utc":  "2026-11-06T19:27:04.0518384Z",
+                        "api_metadata":  {
+                                             "page":  1,
+                                             "pages":  1,
+                                             "per_page":  "100",
+                                             "total":  1
+                                         }
+                    },
+                    {
+                        "file":  "raw/NY.GDP.PCAP.KD.json",
+                        "url":  "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.PCAP.KD?format=json\u0026per_page=20000\u0026date=2000:2024",
+                        "sha256":  "c40a5660038de7320bc0d9b557603a37abd32e228b38681992985b361cd875e2",
+                        "bytes":  1522959,
+                        "retrieved_utc":  "2026-11-06T19:25:30.1036732Z",
+                        "api_metadata":  {
+                                             "page":  1,
+                                             "pages":  1,
+                                             "per_page":  20000,
+                                             "total":  6650,
+                                             "sourceid":  "2",
+                                             "lastupdated":  "2026-10-08"
+                                         }
+                    },
+                    {
+                        "file":  "raw/NY.GDP.PCAP.KD_metadata.json",
+                        "url":  "https://api.worldbank.org/v2/indicator/NY.GDP.PCAP.KD?format=json\u0026per_page=100",
+                        "sha256":  "b01f68bf052d13306a3792e8da20c530710f4e62a5d27ce40857b2161eef1f6a",
+                        "bytes":  1101,
+                        "retrieved_utc":  "2026-11-06T19:27:05.0462943Z",
+                        "api_metadata":  {
+                                             "page":  1,
+                                             "pages":  1,
+                                             "per_page":  "100",
+                                             "total":  1
+                                         }
+                    },
+                    {
+                        "file":  "raw/SH.H2O.BASW.ZS.json",
+                        "url":  "https://api.worldbank.org/v2/country/all/indicator/SH.H2O.BASW.ZS?format=json\u0026per_page=20000\u0026date=2000:2024",
+                        "sha256":  "49cd218389eaa54d021536e7b867485dafe6dd1558af2a0ee9f6e80b1e6b816b",
+                        "bytes":  1749178,
+                        "retrieved_utc":  "2026-11-06T19:25:32.4159899Z",
+                        "api_metadata":  {
+                                             "page":  1,
+                                             "pages":  1,
+                                             "per_page":  20000,
+                                             "total":  6650,
+                                             "sourceid":  "2",
+                                             "lastupdated":  "2026-10-08"
+                                         }
+                    },
+                    {
+                        "file":  "raw/SH.H2O.BASW.ZS_metadata.json",
+                        "url":  "https://api.worldbank.org/v2/indicator/SH.H2O.BASW.ZS?format=json\u0026per_page=100",
+                        "sha256":  "4addcc2b71a907919d4ef6ed2d42e5efcf0246923879868d79c62d9f09cc6b38",
+                        "bytes":  1268,
+                        "retrieved_utc":  "2026-11-06T19:27:06.0856843Z",
+                        "api_metadata":  {
+                                             "page":  1,
+                                             "pages":  1,
+                                             "per_page":  "100",
+                                             "total":  1
+                                         }
+                    },
+                    {
+                        "file":  "raw/SH.STA.BASS.ZS.json",
+                        "url":  "https://api.worldbank.org/v2/country/all/indicator/SH.STA.BASS.ZS?format=json\u0026per_page=20000\u0026date=2000:2024",
+                        "sha256":  "0366268b658dfebeccc23c9dd11cc31381fd8ca449b86e0a0413324613621cdb",
+                        "bytes":  1725281,
+                        "retrieved_utc":  "2026-11-06T19:25:35.8750712Z",
+                        "api_metadata":  {
+                                             "page":  1,
+                                             "pages":  1,
+                                             "per_page":  20000,
+                                             "total":  6650,
+                                             "sourceid":  "2",
+                                             "lastupdated":  "2026-10-08"
+                                         }
+                    },
+                    {
+                        "file":  "raw/SH.STA.BASS.ZS_metadata.json",
+                        "url":  "https://api.worldbank.org/v2/indicator/SH.STA.BASS.ZS?format=json\u0026per_page=100",
+                        "sha256":  "18a33bf30d7227ed85e4d53fe149b08ddab5b79bfa9413cbb419c298e04454f5",
+                        "bytes":  1258,
+                        "retrieved_utc":  "2026-11-06T19:27:06.8215634Z",
+                        "api_metadata":  {
+                                             "page":  1,
+                                             "pages":  1,
+                                             "per_page":  "100",
+                                             "total":  1
+                                         }
+                    },
+                    {
+                        "file":  "raw/EG.ELC.ACCS.ZS.json",
+                        "url":  "https://api.worldbank.org/v2/country/all/indicator/EG.ELC.ACCS.ZS?format=json\u0026per_page=20000\u0026date=2000:2024",
+                        "sha256":  "7d098c3250f2d28da1d6201b7e4d7e6d6f985cce968470daa91c390cffd9950e",
+                        "bytes":  1491383,
+                        "retrieved_utc":  "2026-11-06T19:25:41.4308506Z",
+                        "api_metadata":  {
+                                             "page":  1,
+                                             "pages":  1,
+                                             "per_page":  20000,
+                                             "total":  6650,
+                                             "sourceid":  "2",
+                                             "lastupdated":  "2026-10-08"
+                                         }
+                    },
+                    {
+                        "file":  "raw/EG.ELC.ACCS.ZS_metadata.json",
+                        "url":  "https://api.worldbank.org/v2/indicator/EG.ELC.ACCS.ZS?format=json\u0026per_page=100",
+                        "sha256":  "c911d851f43bb7c6c7827db768de1d3ca94ad02a1b99e06d02dd227848c4d685",
+                        "bytes":  813,
+                        "retrieved_utc":  "2026-11-06T19:27:08.1685996Z",
+                        "api_metadata":  {
+                                             "page":  1,
+                                             "pages":  1,
+                                             "per_page":  "100",
+                                             "total":  1
+                                         }
+                    },
+                    {
+                        "file":  "raw/SP.URB.TOTL.IN.ZS.json",
+                        "url":  "https://api.worldbank.org/v2/country/all/indicator/SP.URB.TOTL.IN.ZS?format=json\u0026per_page=20000\u0026date=2000:2024",
+                        "sha256":  "a438d959d548397a3e150a64742d7f1b1da53db13186a23a66df3bf743190450",
+                        "bytes":  1582313,
+                        "retrieved_utc":  "2026-11-06T19:25:43.8408031Z",
+                        "api_metadata":  {
+                                             "page":  1,
+                                             "pages":  1,
+                                             "per_page":  20000,
+                                             "total":  6650,
+                                             "sourceid":  "2",
+                                             "lastupdated":  "2026-10-08"
+                                         }
+                    },
+                    {
+                        "file":  "raw/SP.URB.TOTL.IN.ZS_metadata.json",
+                        "url":  "https://api.worldbank.org/v2/indicator/SP.URB.TOTL.IN.ZS?format=json\u0026per_page=100",
+                        "sha256":  "027e4f6e148c6f99d03ec04e015131daa4be5cab8481e4b1746fcb3726153733",
+                        "bytes":  720,
+                        "retrieved_utc":  "2026-11-06T19:27:08.8984582Z",
+                        "api_metadata":  {
+                                             "page":  1,
+                                             "pages":  1,
+                                             "per_page":  "100",
+                                             "total":  1
+                                         }
+                    },
+                    {
+                        "file":  "raw/EN.POP.DNST.json",
+                        "url":  "https://api.worldbank.org/v2/country/all/indicator/EN.POP.DNST?format=json\u0026per_page=20000\u0026date=2000:2024",
+                        "sha256":  "78c3cd8f9fb21374cc2a6d68a94bd4b6303cbe4b4eaa2d56c9095cb66831c5bd",
+                        "bytes":  1615128,
+                        "retrieved_utc":  "2026-11-06T19:25:50.2590291Z",
+                        "api_metadata":  {
+                                             "page":  1,
+                                             "pages":  1,
+                                             "per_page":  20000,
+                                             "total":  6650,
+                                             "sourceid":  "2",
+                                             "lastupdated":  "2026-10-08"
+                                         }
+                    },
+                    {
+                        "file":  "raw/EN.POP.DNST_metadata.json",
+                        "url":  "https://api.worldbank.org/v2/indicator/EN.POP.DNST?format=json\u0026per_page=100",
+                        "sha256":  "06ef4d7b9eda94dea9a5d0f336344243cc4ec6d497b4c5877662abdfa01c9fc1",
+                        "bytes":  1135,
+                        "retrieved_utc":  "2026-11-06T19:27:11.4658274Z",
+                        "api_metadata":  {
+                                             "page":  1,
+                                             "pages":  1,
+                                             "per_page":  "100",
+                                             "total":  1
+                                         }
+                    },
+                    {
+                        "file":  "raw/SP.DYN.TFRT.IN.json",
+                        "url":  "https://api.worldbank.org/v2/country/all/indicator/SP.DYN.TFRT.IN?format=json\u0026per_page=20000\u0026date=2000:2024",
+                        "sha256":  "fff79ca23c07441e3f6bb4eb0c345683b897e8c03565c5af88c712efb58d6cd8",
+                        "bytes":  1505174,
+                        "retrieved_utc":  "2026-11-06T19:25:53.5509618Z",
+                        "api_metadata":  {
+                                             "page":  1,
+                                             "pages":  1,
+                                             "per_page":  20000,
+                                             "total":  6650,
+                                             "sourceid":  "2",
+                                             "lastupdated":  "2026-10-08"
+                                         }
+                    },
+                    {
+                        "file":  "raw/SP.DYN.TFRT.IN_metadata.json",
+                        "url":  "https://api.worldbank.org/v2/indicator/SP.DYN.TFRT.IN?format=json\u0026per_page=100",
+                        "sha256":  "ba026257d7e65f4604a37957abdb172e6b680a76e39661fd21f27ec3a1d6b668",
+                        "bytes":  778,
+                        "retrieved_utc":  "2026-11-06T19:27:14.3517996Z",
+                        "api_metadata":  {
+                                             "page":  1,
+                                             "pages":  1,
+                                             "per_page":  "100",
+                                             "total":  1
+                                         }
+                    },
+                    {
+                        "file":  "raw/SE.SEC.ENRR.FE.json",
+                        "url":  "https://api.worldbank.org/v2/country/all/indicator/SE.SEC.ENRR.FE?format=json\u0026per_page=20000\u0026date=2000:2024",
+                        "sha256":  "35c21486bbb57d7546071369f1c7816bebfc96c829bab43dd353b59691b017ba",
+                        "bytes":  1582372,
+                        "retrieved_utc":  "2026-11-06T19:25:56.3664650Z",
+                        "api_metadata":  {
+                                             "page":  1,
+                                             "pages":  1,
+                                             "per_page":  20000,
+                                             "total":  6650,
+                                             "sourceid":  "2",
+                                             "lastupdated":  "2026-10-08"
+                                         }
+                    },
+                    {
+                        "file":  "raw/SE.SEC.ENRR.FE_metadata.json",
+                        "url":  "https://api.worldbank.org/v2/indicator/SE.SEC.ENRR.FE?format=json\u0026per_page=100",
+                        "sha256":  "b4415ac79c960977b0a5a9f9d3ccae56fd1443177596cec3bd6ff4cd4bac17d9",
+                        "bytes":  1148,
+                        "retrieved_utc":  "2026-11-06T19:27:15.7941304Z",
+                        "api_metadata":  {
+                                             "page":  1,
+                                             "pages":  1,
+                                             "per_page":  "100",
+                                             "total":  1
+                                         }
+                    },
+                    {
+                        "file":  "raw/EN.ATM.PM25.MC.M3.json",
+                        "url":  "https://api.worldbank.org/v2/country/all/indicator/EN.ATM.PM25.MC.M3?format=json\u0026per_page=20000\u0026date=2000:2024",
+                        "sha256":  "f6c962b91deadd9304e7fa1d934f573a4dd8392c8adeb9f7845e33312b07d598",
+                        "bytes":  1777615,
+                        "retrieved_utc":  "2026-11-06T19:25:59.5650641Z",
+                        "api_metadata":  {
+                                             "page":  1,
+                                             "pages":  1,
+                                             "per_page":  20000,
+                                             "total":  6650,
+                                             "sourceid":  "2",
+                                             "lastupdated":  "2026-10-08"
+                                         }
+                    },
+                    {
+                        "file":  "raw/EN.ATM.PM25.MC.M3_metadata.json",
+                        "url":  "https://api.worldbank.org/v2/indicator/EN.ATM.PM25.MC.M3?format=json\u0026per_page=100",
+                        "sha256":  "c239514023362294078d86bb8f17809a3342e6afe38bcc6e27524e5a1e0c2900",
+                        "bytes":  1196,
+                        "retrieved_utc":  "2026-11-06T19:27:16.5661587Z",
+                        "api_metadata":  {
+                                             "page":  1,
+                                             "pages":  1,
+                                             "per_page":  "100",
+                                             "total":  1
+                                         }
+                    }
+                ],
+    "output":  {
+                   "sha256":  "6c4b76a61f1f40c1118d0b9a710bf7ee40987500ec54d7f6dd2849978befae24",
+                   "file":  "country_panel.csv"
+               },
+    "license":  "World Bank datasets generally CC BY 4.0 unless indicator-specific terms apply; retain source attribution and check indicator metadata",
+    "license_url":  "https://datacatalog.worldbank.org/public-licenses#cc-by",
+    "methodology_url":  "https://data.unicef.org/resources/jme/",
+    "limitations":  [
+                        "Ecological national analysis; no individual clinical prediction or child-level fairness estimates",
+                        "JME outcomes are modeled and revised retrospectively; temporal evaluation is retrospective, not a real-time forecasting claim",
+                        "Latitude/longitude are World Bank capital coordinates, not population centroids or survey clusters",
+                        "No synthetic filling or interpolation; missing values retained for training-only imputation",
+                        "No survey weights or microdata available in this panel; countries are equally weighted unless an explicit estimand says otherwise",
+                        "Country/region identity, coordinates and year are metadata, not default determinants; no anthropometric predictors",
+                        "Repeated country-years and source smoothing induce dependence; avoid row-wise random splits"
+                    ]
+}

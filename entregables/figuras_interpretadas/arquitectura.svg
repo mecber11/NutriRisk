@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="698.4pt" height="658.640047pt" viewBox="0.0 0.0 698.4 658.640047" version="1.1">
+ <metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-11-04T12:09:52.769776</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 562.640047  L 698.4 562.640047  L 698.4 0  L 0 0  z " style="fill: #ffffff" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 47.88 127.009137  L 650.52 127.009137  Q 660.564 127.009137 660.564 120.356337  L 660.564 73.786737  Q 660.564 67.133937 650.52 67.133937  L 47.88 67.133937  Q 37.836 67.133937 37.836 73.786737  L 37.836 120.356337  Q 37.836 127.009137 47.88 127.009137  z " clip-path="url(#pc27e9aedc3)" style="fill: #eaf3fa; stroke: #166b91; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_3">
+    <path d="M 47.88 193.537137  L 650.52 193.537137  Q 660.564 193.537137 660.564 186.884337  L 660.564 140.314737  Q 660.564 133.661937 650.52 133.661937  L 47.88 133.661937  Q 37.836 133.661937 37.836 140.314737  L 37.836 186.884337  Q 37.836 193.537137 47.88 193.537137  z " clip-path="url(#pc27e9aedc3)" style="fill: #eaf3fa; stroke: #166b91; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_4">
+    <path d="M 47.88 260.065137  L 650.52 260.065137  Q 660.564 260.065137 660.564 253.412337  L 660.564 206.842737  Q 660.564 200.189937 650.52 200.189937  L 47.88 200.189937  Q 37.836 200.189937 37.836 206.842737  L 37.836 253.412337  Q 37.836 260.065137 47.88 260.065137  z " clip-path="url(#pc27e9aedc3)" style="fill: #eaf3fa; stroke: #166b91; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_5">
+    <path d="M 47.88 326.593137  L 650.52 326.593137  Q 660.564 326.593137 660.564 319.940337  L 660.564 273.370737  Q 660.564 266.717937 650.52 266.717937  L 47.88 266.717937  Q 37.836 266.717937 37.836 273.370737  L 37.836 319.940337  Q 37.836 326.593137 47.88 326.593137  z " clip-path="url(#pc27e9aedc3)" style="fill: #eaf3fa; stroke: #166b91; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_6">
+    <path d="M 47.88 393.121137  L 650.52 393.121137  Q 660.564 393.121137 660.564 386.468337  L 660.564 339.898737  Q 660.564 333.245937 650.52 333.245937  L 47.88 333.245937  Q 37.836 333.245937 37.836 339.898737  L 37.836 386.468337  Q 37.836 393.121137 47.88 393.121137  z " clip-path="url(#pc27e9aedc3)" style="fill: #eaf3fa; stroke: #166b91; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_7">
+    <path d="M 47.88 459.649137  L 650.52 459.649137  Q 660.564 459.649137 660.564 452.996337  L 660.564 406.426737  Q 660.564 399.773937 650.52 399.773937  L 47.88 399.773937  Q 37.836 399.773937 37.836 406.426737  L 37.836 452.996337  Q 37.836 459.649137 47.88 459.649137  z " clip-path="url(#pc27e9aedc3)" style="fill: #eaf3fa; stroke: #166b91; stroke-linejoin: miter" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #12334b" x="349.2" y="83.544177" transform="rotate(-0 349.2 83.544177)">Adquisición de datos</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: middle" x="349.2" y="105.778853" transform="rotate(-0 349.2 105.778853)">CSV / XLSX / Parquet · APIs públicas · diccionario y procedencia</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 349.2 129.006927  Q 349.2 133.66008 349.2 137.195199  " style="fill: none; stroke: #166b91; stroke-linecap: round" />
+    <path d="M 351.4 132.795199  L 349.2 137.195199  L 347 132.795199  " style="fill: none; stroke: #166b91; stroke-linecap: round" />
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #12334b" x="349.2" y="150.072177" transform="rotate(-0 349.2 150.072177)">n8n · WF-01 a WF-06</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: middle" x="349.2" y="172.306853" transform="rotate(-0 349.2 172.306853)">Adquisición · calidad · predicciones · alertas · reportes · monitoreo</text>
+   </g>
+   <g id="patch_9">
+    <path d="M 349.2 195.534927  Q 349.2 200.18808 349.2 203.723199  " style="fill: none; stroke: #166b91; stroke-linecap: round" />
+    <path d="M 351.4 199.323199  L 349.2 203.723199  L 347 199.323199  " style="fill: none; stroke: #166b91; stroke-linecap: round" />
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #12334b" x="349.2" y="216.600177" transform="rotate(-0 349.2 216.600177)">LangChain + LangFlow</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: middle" x="349.2" y="238.834853" transform="rotate(-0 349.2 238.834853)">Herramientas y recuperación de evidencia · prototipo visual</text>
+   </g>
+   <g id="patch_10">
+    <path d="M 349.2 262.062927  Q 349.2 266.71608 349.2 270.251199  " style="fill: none; stroke: #166b91; stroke-linecap: round" />
+    <path d="M 351.4 265.851199  L 349.2 270.251199  L 347 265.851199  " style="fill: none; stroke: #166b91; stroke-linecap: round" />
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #12334b" x="349.2" y="283.128177" transform="rotate(-0 349.2 283.128177)">Motor de inteligencia artificial</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'" transform="translate(224.525117 305.933039)">RF · XGBoost · CatBoost · XGBoost + GP · CNN-LSTM</text>
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'" transform="translate(234.940977 317.715636)">Optuna · validación anidada · SHAP · estadística</text>
+   </g>
+   <g id="patch_11">
+    <path d="M 349.2 328.590927  Q 349.2 333.24408 349.2 336.779199  " style="fill: none; stroke: #166b91; stroke-linecap: round" />
+    <path d="M 351.4 332.379199  L 349.2 336.779199  L 347 332.379199  " style="fill: none; stroke: #166b91; stroke-linecap: round" />
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #12334b" x="349.2" y="349.656177" transform="rotate(-0 349.2 349.656177)">Backend y almacenamiento</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: middle" x="349.2" y="371.510853" transform="rotate(-0 349.2 371.510853)">FastAPI · PostgreSQL/PostGIS · MinIO · MLflow</text>
+   </g>
+   <g id="patch_12">
+    <path d="M 349.2 395.118927  Q 349.2 399.77208 349.2 403.307199  " style="fill: none; stroke: #166b91; stroke-linecap: round" />
+    <path d="M 351.4 398.907199  L 349.2 403.307199  L 347 398.907199  " style="fill: none; stroke: #166b91; stroke-linecap: round" />
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #12334b" x="349.2" y="416.184177" transform="rotate(-0 349.2 416.184177)">Frontend y resultados</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: middle" x="349.2" y="438.038853" transform="rotate(-0 349.2 438.038853)">React · mapas · alertas · reportes · figuras PNG / SVG / PDF</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #526173" x="349.2" y="497.348337" transform="rotate(-0 349.2 497.348337)">n8n / LangFlow / PostgreSQL / MinIO: configuración disponible; consultar estado de despliegue.</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 13.2px; font-family: 'DejaVu Sans'; text-anchor: middle" x="349.2" y="24.957937" transform="rotate(-0 349.2 24.957937)">Arquitectura de investigación y aplicación</text>
+   </g>
+  </g>
+  <g id="text_15">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #526173" x="338.4" y="546.077937" transform="rotate(-0 338.4 546.077937)">NutriRisk AI · Datos sintéticos · Evaluación exploratoria</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pc27e9aedc3">
+   <rect x="14.4" y="44.957937" width="669.6" height="443.52" />
+  </clipPath>
+ </defs>
+<rect x="0" y="562.640047" width="698.4" height="96" fill="white" /><g font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#213744"><text x="22" y="587.640047">Cómo leer: Las capas muestran el recorrido desde adquisición y automatización hasta modelos, almacenamiento y resultados.</text><text x="22" y="606.640047">Interpretación: El agente consulta y explica evidencia; el motor predictivo calcula estimaciones. Sus funciones y evidencias se mantienen</text><text x="22" y="619.640047">diferenciadas.</text><text x="22" y="638.640047">Alcance: n8n, LangFlow, PostgreSQL y MinIO requieren comprobar su despliegue; el diagrama no certifica que estén activos.</text></g></svg>

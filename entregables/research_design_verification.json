@@ -1,0 +1,15 @@
+{
+  "status": "PASSED",
+  "count": 8,
+  "checks": [
+    "organized_summary_four_indicators_two_real_charts_six_tabs",
+    "model_stage_filter_baselines_and_country_scatter",
+    "hyperparameter_model_region_filters_curve_and_complete_trials",
+    "all_ten_pairwise_tests_and_separate_residual_diagnostics",
+    "source_missingness_and_protocol_retained",
+    "grouped_downloads_four_figures_and_authenticated_real_results",
+    "mobile_summary_and_hyperparameters_without_page_overflow",
+    "no_browser_javascript_errors"
+  ],
+  "browser_errors": []
+}

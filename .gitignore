@@ -1,0 +1,29 @@
+# Ignorar entornos, datos y artefactos locales
+.venv/
+.venv2/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Datos y artefactos generados
+backend/data/*.db
+backend/data/*.db-wal
+backend/data/*.db-shm
+backend/artifacts/*
+backend/storage/*
+!backend/storage/.gitkeep
+!backend/artifacts/.gitkeep
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/openapi.json
+
+# Entorno y temporales
+.env
+.tmp/
+*.log

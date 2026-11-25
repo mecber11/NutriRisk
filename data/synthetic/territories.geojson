@@ -1,0 +1,1624 @@
+{
+ "type": "FeatureCollection",
+ "name": "andara_departments_synthetic",
+ "features": [
+  {
+   "type": "Feature",
+   "id": "T01",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -75.85,
+       3.2
+      ],
+      [
+       -76.125,
+       3.67631
+      ],
+      [
+       -76.675,
+       3.67631
+      ],
+      [
+       -76.95,
+       3.2
+      ],
+      [
+       -76.675,
+       2.72369
+      ],
+      [
+       -76.125,
+       2.72369
+      ],
+      [
+       -75.85,
+       3.2
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "code": "T01",
+    "name": "Valle Verde",
+    "region": "Norte",
+    "level": "DEPARTMENT",
+    "parent_code": null,
+    "urban_rural": "MIXED",
+    "population": 133368,
+    "population_u5": 14771,
+    "area_km2": 9702.0,
+    "altitude_m": 507.0,
+    "climate_zone": "Árido cálido",
+    "rainfall_mm": 568.0,
+    "temperature_c": 26.9,
+    "ndvi": 0.446,
+    "food_insecurity_index": 0.725,
+    "water_coverage": 0.637,
+    "sanitation_coverage": 0.379,
+    "latitude": 3.2,
+    "longitude": -76.4,
+    "neighbor_codes": [
+     "T02",
+     "T07"
+    ],
+    "is_synthetic": true
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "T02",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -75.025,
+       3.67631
+      ],
+      [
+       -75.3,
+       4.15263
+      ],
+      [
+       -75.85,
+       4.15263
+      ],
+      [
+       -76.125,
+       3.67631
+      ],
+      [
+       -75.85,
+       3.2
+      ],
+      [
+       -75.3,
+       3.2
+      ],
+      [
+       -75.025,
+       3.67631
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "code": "T02",
+    "name": "Sierra Claro",
+    "region": "Norte",
+    "level": "DEPARTMENT",
+    "parent_code": null,
+    "urban_rural": "MIXED",
+    "population": 619508,
+    "population_u5": 67949,
+    "area_km2": 9697.3,
+    "altitude_m": 651.0,
+    "climate_zone": "Árido cálido",
+    "rainfall_mm": 500.0,
+    "temperature_c": 27.4,
+    "ndvi": 0.374,
+    "food_insecurity_index": 0.565,
+    "water_coverage": 0.646,
+    "sanitation_coverage": 0.495,
+    "latitude": 3.6763,
+    "longitude": -75.575,
+    "neighbor_codes": [
+     "T01",
+     "T03",
+     "T07",
+     "T08",
+     "T09"
+    ],
+    "is_synthetic": true
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "T03",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -74.2,
+       3.2
+      ],
+      [
+       -74.475,
+       3.67631
+      ],
+      [
+       -75.025,
+       3.67631
+      ],
+      [
+       -75.3,
+       3.2
+      ],
+      [
+       -75.025,
+       2.72369
+      ],
+      [
+       -74.475,
+       2.72369
+      ],
+      [
+       -74.2,
+       3.2
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "code": "T03",
+    "name": "Loma Nuevo",
+    "region": "Norte",
+    "level": "DEPARTMENT",
+    "parent_code": null,
+    "urban_rural": "MIXED",
+    "population": 386438,
+    "population_u5": 35103,
+    "area_km2": 9702.0,
+    "altitude_m": 745.0,
+    "climate_zone": "Árido cálido",
+    "rainfall_mm": 506.0,
+    "temperature_c": 26.4,
+    "ndvi": 0.306,
+    "food_insecurity_index": 0.707,
+    "water_coverage": 0.629,
+    "sanitation_coverage": 0.573,
+    "latitude": 3.2,
+    "longitude": -74.75,
+    "neighbor_codes": [
+     "T02",
+     "T04",
+     "T09"
+    ],
+    "is_synthetic": true
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "T04",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -73.375,
+       3.67631
+      ],
+      [
+       -73.65,
+       4.15263
+      ],
+      [
+       -74.2,
+       4.15263
+      ],
+      [
+       -74.475,
+       3.67631
+      ],
+      [
+       -74.2,
+       3.2
+      ],
+      [
+       -73.65,
+       3.2
+      ],
+      [
+       -73.375,
+       3.67631
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "code": "T04",
+    "name": "Costa Hondo",
+    "region": "Norte",
+    "level": "DEPARTMENT",
+    "parent_code": null,
+    "urban_rural": "MIXED",
+    "population": 704115,
+    "population_u5": 62594,
+    "area_km2": 9697.3,
+    "altitude_m": 333.0,
+    "climate_zone": "Árido cálido",
+    "rainfall_mm": 508.0,
+    "temperature_c": 27.8,
+    "ndvi": 0.394,
+    "food_insecurity_index": 0.651,
+    "water_coverage": 0.647,
+    "sanitation_coverage": 0.511,
+    "latitude": 3.6763,
+    "longitude": -73.925,
+    "neighbor_codes": [
+     "T03",
+     "T05",
+     "T09",
+     "T10",
+     "T11"
+    ],
+    "is_synthetic": true
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "T05",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -72.55,
+       3.2
+      ],
+      [
+       -72.825,
+       3.67631
+      ],
+      [
+       -73.375,
+       3.67631
+      ],
+      [
+       -73.65,
+       3.2
+      ],
+      [
+       -73.375,
+       2.72369
+      ],
+      [
+       -72.825,
+       2.72369
+      ],
+      [
+       -72.55,
+       3.2
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "code": "T05",
+    "name": "Río Grande",
+    "region": "Norte",
+    "level": "DEPARTMENT",
+    "parent_code": null,
+    "urban_rural": "MIXED",
+    "population": 667601,
+    "population_u5": 70415,
+    "area_km2": 9702.0,
+    "altitude_m": 402.0,
+    "climate_zone": "Árido cálido",
+    "rainfall_mm": 418.0,
+    "temperature_c": 27.6,
+    "ndvi": 0.281,
+    "food_insecurity_index": 0.731,
+    "water_coverage": 0.613,
+    "sanitation_coverage": 0.512,
+    "latitude": 3.2,
+    "longitude": -73.1,
+    "neighbor_codes": [
+     "T04",
+     "T06",
+     "T11"
+    ],
+    "is_synthetic": true
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "T06",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -71.725,
+       3.67631
+      ],
+      [
+       -72.0,
+       4.15263
+      ],
+      [
+       -72.55,
+       4.15263
+      ],
+      [
+       -72.825,
+       3.67631
+      ],
+      [
+       -72.55,
+       3.2
+      ],
+      [
+       -72.0,
+       3.2
+      ],
+      [
+       -71.725,
+       3.67631
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "code": "T06",
+    "name": "Monte Florido",
+    "region": "Norte",
+    "level": "DEPARTMENT",
+    "parent_code": null,
+    "urban_rural": "MIXED",
+    "population": 345109,
+    "population_u5": 30520,
+    "area_km2": 9697.3,
+    "altitude_m": 298.0,
+    "climate_zone": "Árido cálido",
+    "rainfall_mm": 560.0,
+    "temperature_c": 29.0,
+    "ndvi": 0.376,
+    "food_insecurity_index": 0.726,
+    "water_coverage": 0.607,
+    "sanitation_coverage": 0.477,
+    "latitude": 3.6763,
+    "longitude": -72.275,
+    "neighbor_codes": [
+     "T05",
+     "T11",
+     "T12"
+    ],
+    "is_synthetic": true
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "T07",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -75.85,
+       4.15263
+      ],
+      [
+       -76.125,
+       4.62894
+      ],
+      [
+       -76.675,
+       4.62894
+      ],
+      [
+       -76.95,
+       4.15263
+      ],
+      [
+       -76.675,
+       3.67631
+      ],
+      [
+       -76.125,
+       3.67631
+      ],
+      [
+       -75.85,
+       4.15263
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "code": "T07",
+    "name": "Llano Serrano",
+    "region": "Centro",
+    "level": "DEPARTMENT",
+    "parent_code": null,
+    "urban_rural": "MIXED",
+    "population": 427577,
+    "population_u5": 41584,
+    "area_km2": 9691.8,
+    "altitude_m": 1093.0,
+    "climate_zone": "Templado subhúmedo",
+    "rainfall_mm": 1327.0,
+    "temperature_c": 19.0,
+    "ndvi": 0.51,
+    "food_insecurity_index": 0.271,
+    "water_coverage": 0.824,
+    "sanitation_coverage": 0.819,
+    "latitude": 4.1526,
+    "longitude": -76.4,
+    "neighbor_codes": [
+     "T01",
+     "T02",
+     "T08",
+     "T13"
+    ],
+    "is_synthetic": true
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "T08",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -75.025,
+       4.62894
+      ],
+      [
+       -75.3,
+       5.10526
+      ],
+      [
+       -75.85,
+       5.10526
+      ],
+      [
+       -76.125,
+       4.62894
+      ],
+      [
+       -75.85,
+       4.15263
+      ],
+      [
+       -75.3,
+       4.15263
+      ],
+      [
+       -75.025,
+       4.62894
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "code": "T08",
+    "name": "Pampa Central",
+    "region": "Centro",
+    "level": "DEPARTMENT",
+    "parent_code": null,
+    "urban_rural": "MIXED",
+    "population": 513093,
+    "population_u5": 56142,
+    "area_km2": 9685.6,
+    "altitude_m": 1266.0,
+    "climate_zone": "Templado subhúmedo",
+    "rainfall_mm": 983.0,
+    "temperature_c": 17.7,
+    "ndvi": 0.516,
+    "food_insecurity_index": 0.35,
+    "water_coverage": 0.849,
+    "sanitation_coverage": 0.729,
+    "latitude": 4.6289,
+    "longitude": -75.575,
+    "neighbor_codes": [
+     "T02",
+     "T07",
+     "T09",
+     "T13",
+     "T14",
+     "T15"
+    ],
+    "is_synthetic": true
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "T09",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -74.2,
+       4.15263
+      ],
+      [
+       -74.475,
+       4.62894
+      ],
+      [
+       -75.025,
+       4.62894
+      ],
+      [
+       -75.3,
+       4.15263
+      ],
+      [
+       -75.025,
+       3.67631
+      ],
+      [
+       -74.475,
+       3.67631
+      ],
+      [
+       -74.2,
+       4.15263
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "code": "T09",
+    "name": "Campo del Sol",
+    "region": "Centro",
+    "level": "DEPARTMENT",
+    "parent_code": null,
+    "urban_rural": "MIXED",
+    "population": 569556,
+    "population_u5": 53564,
+    "area_km2": 9691.8,
+    "altitude_m": 1243.0,
+    "climate_zone": "Templado subhúmedo",
+    "rainfall_mm": 1215.0,
+    "temperature_c": 19.4,
+    "ndvi": 0.516,
+    "food_insecurity_index": 0.241,
+    "water_coverage": 0.924,
+    "sanitation_coverage": 0.864,
+    "latitude": 4.1526,
+    "longitude": -74.75,
+    "neighbor_codes": [
+     "T02",
+     "T03",
+     "T04",
+     "T08",
+     "T10",
+     "T15"
+    ],
+    "is_synthetic": true
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "T10",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -73.375,
+       4.62894
+      ],
+      [
+       -73.65,
+       5.10526
+      ],
+      [
+       -74.2,
+       5.10526
+      ],
+      [
+       -74.475,
+       4.62894
+      ],
+      [
+       -74.2,
+       4.15263
+      ],
+      [
+       -73.65,
+       4.15263
+      ],
+      [
+       -73.375,
+       4.62894
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "code": "T10",
+    "name": "Alta de Agua",
+    "region": "Centro",
+    "level": "DEPARTMENT",
+    "parent_code": null,
+    "urban_rural": "MIXED",
+    "population": 522139,
+    "population_u5": 55611,
+    "area_km2": 9685.6,
+    "altitude_m": 1601.0,
+    "climate_zone": "Templado subhúmedo",
+    "rainfall_mm": 1125.0,
+    "temperature_c": 18.6,
+    "ndvi": 0.517,
+    "food_insecurity_index": 0.382,
+    "water_coverage": 0.848,
+    "sanitation_coverage": 0.736,
+    "latitude": 4.6289,
+    "longitude": -73.925,
+    "neighbor_codes": [
+     "T04",
+     "T09",
+     "T11",
+     "T15",
+     "T16",
+     "T17"
+    ],
+    "is_synthetic": true
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "T11",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -72.55,
+       4.15263
+      ],
+      [
+       -72.825,
+       4.62894
+      ],
+      [
+       -73.375,
+       4.62894
+      ],
+      [
+       -73.65,
+       4.15263
+      ],
+      [
+       -73.375,
+       3.67631
+      ],
+      [
+       -72.825,
+       3.67631
+      ],
+      [
+       -72.55,
+       4.15263
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "code": "T11",
+    "name": "Bajo Alto",
+    "region": "Centro",
+    "level": "DEPARTMENT",
+    "parent_code": null,
+    "urban_rural": "MIXED",
+    "population": 538482,
+    "population_u5": 57393,
+    "area_km2": 9691.8,
+    "altitude_m": 1583.0,
+    "climate_zone": "Templado subhúmedo",
+    "rainfall_mm": 1116.0,
+    "temperature_c": 20.4,
+    "ndvi": 0.605,
+    "food_insecurity_index": 0.337,
+    "water_coverage": 0.793,
+    "sanitation_coverage": 0.775,
+    "latitude": 4.1526,
+    "longitude": -73.1,
+    "neighbor_codes": [
+     "T04",
+     "T05",
+     "T06",
+     "T10",
+     "T12",
+     "T17"
+    ],
+    "is_synthetic": true
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "T12",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -71.725,
+       4.62894
+      ],
+      [
+       -72.0,
+       5.10526
+      ],
+      [
+       -72.55,
+       5.10526
+      ],
+      [
+       -72.825,
+       4.62894
+      ],
+      [
+       -72.55,
+       4.15263
+      ],
+      [
+       -72.0,
+       4.15263
+      ],
+      [
+       -71.725,
+       4.62894
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "code": "T12",
+    "name": "Puerto Bonito",
+    "region": "Centro",
+    "level": "DEPARTMENT",
+    "parent_code": null,
+    "urban_rural": "MIXED",
+    "population": 915564,
+    "population_u5": 80663,
+    "area_km2": 9685.6,
+    "altitude_m": 1030.0,
+    "climate_zone": "Templado subhúmedo",
+    "rainfall_mm": 1194.0,
+    "temperature_c": 18.7,
+    "ndvi": 0.667,
+    "food_insecurity_index": 0.325,
+    "water_coverage": 0.832,
+    "sanitation_coverage": 0.806,
+    "latitude": 4.6289,
+    "longitude": -72.275,
+    "neighbor_codes": [
+     "T06",
+     "T11",
+     "T17",
+     "T18"
+    ],
+    "is_synthetic": true
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "T13",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -75.85,
+       5.10526
+      ],
+      [
+       -76.125,
+       5.58157
+      ],
+      [
+       -76.675,
+       5.58157
+      ],
+      [
+       -76.95,
+       5.10526
+      ],
+      [
+       -76.675,
+       4.62894
+      ],
+      [
+       -76.125,
+       4.62894
+      ],
+      [
+       -75.85,
+       5.10526
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "code": "T13",
+    "name": "Cañón Fértil",
+    "region": "Sur",
+    "level": "DEPARTMENT",
+    "parent_code": null,
+    "urban_rural": "MIXED",
+    "population": 401646,
+    "population_u5": 40003,
+    "area_km2": 9678.7,
+    "altitude_m": 2499.0,
+    "climate_zone": "Altiplano frío",
+    "rainfall_mm": 647.0,
+    "temperature_c": 11.9,
+    "ndvi": 0.447,
+    "food_insecurity_index": 0.475,
+    "water_coverage": 0.668,
+    "sanitation_coverage": 0.573,
+    "latitude": 5.1053,
+    "longitude": -76.4,
+    "neighbor_codes": [
+     "T07",
+     "T08",
+     "T14",
+     "T19"
+    ],
+    "is_synthetic": true
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "T14",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -75.025,
+       5.58157
+      ],
+      [
+       -75.3,
+       6.05788
+      ],
+      [
+       -75.85,
+       6.05788
+      ],
+      [
+       -76.125,
+       5.58157
+      ],
+      [
+       -75.85,
+       5.10526
+      ],
+      [
+       -75.3,
+       5.10526
+      ],
+      [
+       -75.025,
+       5.58157
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "code": "T14",
+    "name": "Sabana del Este",
+    "region": "Sur",
+    "level": "DEPARTMENT",
+    "parent_code": null,
+    "urban_rural": "MIXED",
+    "population": 625742,
+    "population_u5": 70011,
+    "area_km2": 9671.1,
+    "altitude_m": 3392.0,
+    "climate_zone": "Altiplano frío",
+    "rainfall_mm": 542.0,
+    "temperature_c": 9.0,
+    "ndvi": 0.368,
+    "food_insecurity_index": 0.514,
+    "water_coverage": 0.671,
+    "sanitation_coverage": 0.645,
+    "latitude": 5.5816,
+    "longitude": -75.575,
+    "neighbor_codes": [
+     "T08",
+     "T13",
+     "T15",
+     "T19",
+     "T20",
+     "T21"
+    ],
+    "is_synthetic": true
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "T15",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -74.2,
+       5.10526
+      ],
+      [
+       -74.475,
+       5.58157
+      ],
+      [
+       -75.025,
+       5.58157
+      ],
+      [
+       -75.3,
+       5.10526
+      ],
+      [
+       -75.025,
+       4.62894
+      ],
+      [
+       -74.475,
+       4.62894
+      ],
+      [
+       -74.2,
+       5.10526
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "code": "T15",
+    "name": "Cumbre Real",
+    "region": "Sur",
+    "level": "DEPARTMENT",
+    "parent_code": null,
+    "urban_rural": "MIXED",
+    "population": 506396,
+    "population_u5": 43612,
+    "area_km2": 9678.7,
+    "altitude_m": 2676.0,
+    "climate_zone": "Altiplano frío",
+    "rainfall_mm": 666.0,
+    "temperature_c": 8.9,
+    "ndvi": 0.491,
+    "food_insecurity_index": 0.542,
+    "water_coverage": 0.677,
+    "sanitation_coverage": 0.71,
+    "latitude": 5.1053,
+    "longitude": -74.75,
+    "neighbor_codes": [
+     "T08",
+     "T09",
+     "T10",
+     "T14",
+     "T16",
+     "T21"
+    ],
+    "is_synthetic": true
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "T16",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -73.375,
+       5.58157
+      ],
+      [
+       -73.65,
+       6.05788
+      ],
+      [
+       -74.2,
+       6.05788
+      ],
+      [
+       -74.475,
+       5.58157
+      ],
+      [
+       -74.2,
+       5.10526
+      ],
+      [
+       -73.65,
+       5.10526
+      ],
+      [
+       -73.375,
+       5.58157
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "code": "T16",
+    "name": "Vega Pacífico",
+    "region": "Sur",
+    "level": "DEPARTMENT",
+    "parent_code": null,
+    "urban_rural": "MIXED",
+    "population": 720368,
+    "population_u5": 64788,
+    "area_km2": 9671.1,
+    "altitude_m": 3523.0,
+    "climate_zone": "Altiplano frío",
+    "rainfall_mm": 513.0,
+    "temperature_c": 8.3,
+    "ndvi": 0.519,
+    "food_insecurity_index": 0.558,
+    "water_coverage": 0.755,
+    "sanitation_coverage": 0.696,
+    "latitude": 5.5816,
+    "longitude": -73.925,
+    "neighbor_codes": [
+     "T10",
+     "T15",
+     "T17",
+     "T21",
+     "T22",
+     "T23"
+    ],
+    "is_synthetic": true
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "T17",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -72.55,
+       5.10526
+      ],
+      [
+       -72.825,
+       5.58157
+      ],
+      [
+       -73.375,
+       5.58157
+      ],
+      [
+       -73.65,
+       5.10526
+      ],
+      [
+       -73.375,
+       4.62894
+      ],
+      [
+       -72.825,
+       4.62894
+      ],
+      [
+       -72.55,
+       5.10526
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "code": "T17",
+    "name": "Tierra Andino",
+    "region": "Sur",
+    "level": "DEPARTMENT",
+    "parent_code": null,
+    "urban_rural": "MIXED",
+    "population": 85701,
+    "population_u5": 8245,
+    "area_km2": 9678.7,
+    "altitude_m": 3194.0,
+    "climate_zone": "Altiplano frío",
+    "rainfall_mm": 528.0,
+    "temperature_c": 10.2,
+    "ndvi": 0.395,
+    "food_insecurity_index": 0.567,
+    "water_coverage": 0.663,
+    "sanitation_coverage": 0.527,
+    "latitude": 5.1053,
+    "longitude": -73.1,
+    "neighbor_codes": [
+     "T10",
+     "T11",
+     "T12",
+     "T16",
+     "T18",
+     "T23"
+    ],
+    "is_synthetic": true
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "T18",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -71.725,
+       5.58157
+      ],
+      [
+       -72.0,
+       6.05788
+      ],
+      [
+       -72.55,
+       6.05788
+      ],
+      [
+       -72.825,
+       5.58157
+      ],
+      [
+       -72.55,
+       5.10526
+      ],
+      [
+       -72.0,
+       5.10526
+      ],
+      [
+       -71.725,
+       5.58157
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "code": "T18",
+    "name": "Bosque Tropical",
+    "region": "Sur",
+    "level": "DEPARTMENT",
+    "parent_code": null,
+    "urban_rural": "MIXED",
+    "population": 618128,
+    "population_u5": 68758,
+    "area_km2": 9671.1,
+    "altitude_m": 3119.0,
+    "climate_zone": "Altiplano frío",
+    "rainfall_mm": 559.0,
+    "temperature_c": 8.1,
+    "ndvi": 0.482,
+    "food_insecurity_index": 0.574,
+    "water_coverage": 0.71,
+    "sanitation_coverage": 0.532,
+    "latitude": 5.5816,
+    "longitude": -72.275,
+    "neighbor_codes": [
+     "T12",
+     "T17",
+     "T23",
+     "T24"
+    ],
+    "is_synthetic": true
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "T19",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -75.85,
+       6.05788
+      ],
+      [
+       -76.125,
+       6.5342
+      ],
+      [
+       -76.675,
+       6.5342
+      ],
+      [
+       -76.95,
+       6.05788
+      ],
+      [
+       -76.675,
+       5.58157
+      ],
+      [
+       -76.125,
+       5.58157
+      ],
+      [
+       -75.85,
+       6.05788
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "code": "T19",
+    "name": "Marisma del Valle",
+    "region": "Occidente",
+    "level": "DEPARTMENT",
+    "parent_code": null,
+    "urban_rural": "MIXED",
+    "population": 82752,
+    "population_u5": 8290,
+    "area_km2": 9663.0,
+    "altitude_m": 710.0,
+    "climate_zone": "Templado húmedo",
+    "rainfall_mm": 978.0,
+    "temperature_c": 23.1,
+    "ndvi": 0.476,
+    "food_insecurity_index": 0.461,
+    "water_coverage": 0.814,
+    "sanitation_coverage": 0.728,
+    "latitude": 6.0579,
+    "longitude": -76.4,
+    "neighbor_codes": [
+     "T13",
+     "T14",
+     "T20"
+    ],
+    "is_synthetic": true
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "T20",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -75.025,
+       6.5342
+      ],
+      [
+       -75.3,
+       7.01051
+      ],
+      [
+       -75.85,
+       7.01051
+      ],
+      [
+       -76.125,
+       6.5342
+      ],
+      [
+       -75.85,
+       6.05788
+      ],
+      [
+       -75.3,
+       6.05788
+      ],
+      [
+       -75.025,
+       6.5342
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "code": "T20",
+    "name": "Quebrada Escondido",
+    "region": "Occidente",
+    "level": "DEPARTMENT",
+    "parent_code": null,
+    "urban_rural": "MIXED",
+    "population": 551137,
+    "population_u5": 57806,
+    "area_km2": 9654.1,
+    "altitude_m": 1040.0,
+    "climate_zone": "Templado húmedo",
+    "rainfall_mm": 1082.0,
+    "temperature_c": 21.3,
+    "ndvi": 0.606,
+    "food_insecurity_index": 0.305,
+    "water_coverage": 0.789,
+    "sanitation_coverage": 0.707,
+    "latitude": 6.5342,
+    "longitude": -75.575,
+    "neighbor_codes": [
+     "T14",
+     "T19",
+     "T21"
+    ],
+    "is_synthetic": true
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "T21",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -74.2,
+       6.05788
+      ],
+      [
+       -74.475,
+       6.5342
+      ],
+      [
+       -75.025,
+       6.5342
+      ],
+      [
+       -75.3,
+       6.05788
+      ],
+      [
+       -75.025,
+       5.58157
+      ],
+      [
+       -74.475,
+       5.58157
+      ],
+      [
+       -74.2,
+       6.05788
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "code": "T21",
+    "name": "Altiplano Dorado",
+    "region": "Occidente",
+    "level": "DEPARTMENT",
+    "parent_code": null,
+    "urban_rural": "MIXED",
+    "population": 74622,
+    "population_u5": 8431,
+    "area_km2": 9663.0,
+    "altitude_m": 1136.0,
+    "climate_zone": "Templado húmedo",
+    "rainfall_mm": 1022.0,
+    "temperature_c": 22.1,
+    "ndvi": 0.581,
+    "food_insecurity_index": 0.304,
+    "water_coverage": 0.717,
+    "sanitation_coverage": 0.746,
+    "latitude": 6.0579,
+    "longitude": -74.75,
+    "neighbor_codes": [
+     "T14",
+     "T15",
+     "T16",
+     "T20",
+     "T22"
+    ],
+    "is_synthetic": true
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "T22",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -73.375,
+       6.5342
+      ],
+      [
+       -73.65,
+       7.01051
+      ],
+      [
+       -74.2,
+       7.01051
+      ],
+      [
+       -74.475,
+       6.5342
+      ],
+      [
+       -74.2,
+       6.05788
+      ],
+      [
+       -73.65,
+       6.05788
+      ],
+      [
+       -73.375,
+       6.5342
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "code": "T22",
+    "name": "Ribera del Norte",
+    "region": "Oriente",
+    "level": "DEPARTMENT",
+    "parent_code": null,
+    "urban_rural": "MIXED",
+    "population": 756024,
+    "population_u5": 83942,
+    "area_km2": 9654.1,
+    "altitude_m": 350.0,
+    "climate_zone": "Tropical húmedo",
+    "rainfall_mm": 2403.0,
+    "temperature_c": 26.7,
+    "ndvi": 0.695,
+    "food_insecurity_index": 0.505,
+    "water_coverage": 0.68,
+    "sanitation_coverage": 0.517,
+    "latitude": 6.5342,
+    "longitude": -73.925,
+    "neighbor_codes": [
+     "T16",
+     "T21",
+     "T23"
+    ],
+    "is_synthetic": true
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "T23",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -72.55,
+       6.05788
+      ],
+      [
+       -72.825,
+       6.5342
+      ],
+      [
+       -73.375,
+       6.5342
+      ],
+      [
+       -73.65,
+       6.05788
+      ],
+      [
+       -73.375,
+       5.58157
+      ],
+      [
+       -72.825,
+       5.58157
+      ],
+      [
+       -72.55,
+       6.05788
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "code": "T23",
+    "name": "Mesa Austral",
+    "region": "Oriente",
+    "level": "DEPARTMENT",
+    "parent_code": null,
+    "urban_rural": "MIXED",
+    "population": 776152,
+    "population_u5": 68424,
+    "area_km2": 9663.0,
+    "altitude_m": 430.0,
+    "climate_zone": "Tropical húmedo",
+    "rainfall_mm": 1867.0,
+    "temperature_c": 27.5,
+    "ndvi": 0.649,
+    "food_insecurity_index": 0.585,
+    "water_coverage": 0.612,
+    "sanitation_coverage": 0.336,
+    "latitude": 6.0579,
+    "longitude": -73.1,
+    "neighbor_codes": [
+     "T16",
+     "T17",
+     "T18",
+     "T22",
+     "T24"
+    ],
+    "is_synthetic": true
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "T24",
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -71.725,
+       6.5342
+      ],
+      [
+       -72.0,
+       7.01051
+      ],
+      [
+       -72.55,
+       7.01051
+      ],
+      [
+       -72.825,
+       6.5342
+      ],
+      [
+       -72.55,
+       6.05788
+      ],
+      [
+       -72.0,
+       6.05788
+      ],
+      [
+       -71.725,
+       6.5342
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "code": "T24",
+    "name": "Cruz Unido",
+    "region": "Oriente",
+    "level": "DEPARTMENT",
+    "parent_code": null,
+    "urban_rural": "MIXED",
+    "population": 599670,
+    "population_u5": 53049,
+    "area_km2": 9654.1,
+    "altitude_m": 178.0,
+    "climate_zone": "Tropical húmedo",
+    "rainfall_mm": 1821.0,
+    "temperature_c": 25.1,
+    "ndvi": 0.655,
+    "food_insecurity_index": 0.431,
+    "water_coverage": 0.668,
+    "sanitation_coverage": 0.47,
+    "latitude": 6.5342,
+    "longitude": -72.275,
+    "neighbor_codes": [
+     "T18",
+     "T23"
+    ],
+    "is_synthetic": true
+   }
+  }
+ ]
+}

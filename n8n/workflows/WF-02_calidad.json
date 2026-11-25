@@ -1,0 +1,92 @@
+{
+  "name": "NutriRisk WF-02 · Normalización y control de calidad de datasets",
+  "nodes": [
+    {
+      "id": "8c5d710a-ac1e-4abe-9a5d-c8b98af23bd8",
+      "name": "Programación",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "15 5 * * *"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "e157e495-0625-43d8-818e-a4b55e5d9425",
+      "name": "Ejecución manual",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        180
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "7003e00f-9402-4bcd-979b-ed3a89087338",
+      "name": "Ejecutar operación",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        280,
+        0
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.NUTRIRISK_API_URL + '/api/v1/automation/quality' }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-N8N-Token",
+              "value": "={{ $env.NUTRIRISK_API_TOKEN }}"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 300000
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Programación": {
+      "main": [
+        [
+          {
+            "node": "Ejecutar operación",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ejecución manual": {
+      "main": [
+        [
+          {
+            "node": "Ejecutar operación",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "tags": []
+}

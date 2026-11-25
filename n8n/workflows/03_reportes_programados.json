@@ -1,0 +1,94 @@
+{
+  "name": "NutriRisk · 03 Reportes programados",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [{ "field": "cronExpression", "expression": "0 7 1 * *" }]
+        }
+      },
+      "id": "b1c1a2d4-0003-4c11-9a03-000000000001",
+      "name": "Primer día del mes 07:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [-240, 0]
+    },
+    {
+      "parameters": {
+        "url": "={{$env.NUTRIRISK_API_URL || 'http://api:8000'}}/api/v1/reports/n8n/generate",
+        "method": "POST",
+        "sendHeaders": true,
+        "sendBody": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "X-N8N-Token", "value": "={{$env.NUTRIRISK_API_TOKEN || 'nutririsk-n8n-token'}}" },
+            { "name": "Content-Type", "value": "application/json" }
+          ]
+        },
+        "bodyParameters": {
+          "parameters": [
+            { "name": "kind", "value": "prevalence_summary" },
+            { "name": "fmt", "value": "pdf" },
+            { "name": "params", "value": "={{ { \"year\": new Date().getFullYear() - 1 } }}" }
+          ]
+        },
+        "options": { "timeout": 180000 }
+      },
+      "id": "b1c1a2d4-0003-4c11-9a03-000000000002",
+      "name": "Generar resumen mensual",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [0, 0],
+      "notes": "Genera el PDF de prevalencias del último periodo disponible."
+    },
+    {
+      "parameters": {
+        "url": "={{$env.NUTRIRISK_API_URL || 'http://api:8000'}}{{$json.download_url}}",
+        "method": "GET",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [{ "name": "X-N8N-Token", "value": "={{$env.NUTRIRISK_API_TOKEN || 'nutririsk-n8n-token'}}" }]
+        },
+        "options": { "response": { "response": { "responseFormat": "file" } }, "timeout": 180000 }
+      },
+      "id": "b1c1a2d4-0003-4c11-9a03-000000000003",
+      "name": "Descargar reporte",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [240, 0]
+    },
+    {
+      "parameters": {
+        "fromEmail": "reportes@nutririsk.local",
+        "toEmail": "={{$env.NUTRIRISK_REPORT_EMAIL || 'direccion@nutririsk.local'}}",
+        "subject": "NutriRisk · Reporte mensual de prevalencias",
+        "emailFormat": "text",
+        "text": "=Adjunto el reporte mensual generado automáticamente.\nArchivo: {{$json.file_name}}\nPeriodo: {{$json.params.year}}"
+      },
+      "id": "b1c1a2d4-0003-4c11-9a03-000000000004",
+      "name": "Enviar reporte",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [480, 0]
+    }
+  ],
+  "connections": {
+    "Primer día del mes 07:00": {
+      "main": [[{ "node": "Generar resumen mensual", "type": "main", "index": 0 }]]
+    },
+    "Generar resumen mensual": {
+      "main": [[{ "node": "Descargar reporte", "type": "main", "index": 0 }]]
+    },
+    "Descargar reporte": {
+      "main": [[{ "node": "Enviar reporte", "type": "main", "index": 0 }]]
+    }
+  },
+  "active": false,
+  "settings": { "executionOrder": "v1" },
+  "pinData": {},
+  "meta": {
+    "description": "Generación y envío mensual del reporte de prevalencias (PDF).",
+    "templateCredsSetupCompleted": false
+  },
+  "tags": [{ "name": "NutriRisk" }, { "name": "Reportes" }]
+}

@@ -1,0 +1,10 @@
+{
+  "run_id": "20261106T194207-e0ed9fcf",
+  "classification_run_id": "20261106T203950-42926913",
+  "figures": 7,
+  "figure_dpi": 600,
+  "source_article": "C:\\Users\\David\\Documents\\deepseek-harness\\default-workspace\\nutririsk-ai\\entregables\\Articulo_NutriRisk_Evaluacion_Reproducible.docx",
+  "output": "C:\\Users\\David\\Documents\\deepseek-harness\\default-workspace\\nutririsk-ai\\entregables\\Articulo_NutriRisk_Datos_Reales.docx",
+  "sha256": "9463b9b4ac71d8d684ef987d8e0f5ba7cebf2d98bb24ad3883d0750a0845c603",
+  "synthetic": false
+}

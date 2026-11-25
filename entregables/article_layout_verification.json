@@ -1,0 +1,30 @@
+{
+  "pages": 16,
+  "references": 32,
+  "recent_scientific_refs": 26,
+  "recent_fraction": 0.8125,
+  "abstract_es_words": 167,
+  "abstract_en_words": 168,
+  "figures": 4,
+  "tables": 16,
+  "run_present": true,
+  "page_char_counts": [
+    2772,
+    2788,
+    2863,
+    2894,
+    2997,
+    1991,
+    1680,
+    570,
+    659,
+    2300,
+    2710,
+    2543,
+    4192,
+    3670,
+    2836,
+    2487
+  ],
+  "pdf_sha256": "689a2f55a6871a096b73dc2c9e8f48e080200a1aa278fbd1c563bc3499ef65c2"
+}

@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns2="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" width="642.6pt" height="443.720047pt" viewBox="0.0 0.0 642.6 443.720047" version="1.1">
+ <metadata>
+  <rdf:RDF>
+   <ns2:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:date>2026-11-04T12:07:36.923437</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <ns2:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </ns2:Agent>
+    </dc:creator>
+   </ns2:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 360.720047  L 642.6 360.720047  L 642.6 0  L 0 0  z " style="fill: #ffffff" />
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 29.745 215.295938  L 152.505 215.295938  Q 161.712 215.295938 161.712 211.137938  L 161.712 114.117938  Q 161.712 109.959938 152.505 109.959938  L 29.745 109.959938  Q 20.538 109.959938 20.538 114.117938  L 20.538 211.137938  Q 20.538 215.295938 29.745 215.295938  z " clip-path="url(#p8e8ea68e6c)" style="fill: #eaf3fa; stroke: #167d9a; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_3">
+    <path d="M 183.195 215.295938  L 305.955 215.295938  Q 315.162 215.295938 315.162 211.137938  L 315.162 114.117938  Q 315.162 109.959938 305.955 109.959938  L 183.195 109.959938  Q 173.988 109.959938 173.988 114.117938  L 173.988 211.137938  Q 173.988 215.295938 183.195 215.295938  z " clip-path="url(#p8e8ea68e6c)" style="fill: #eaf3fa; stroke: #167d9a; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_4">
+    <path d="M 336.645 215.295938  L 459.405 215.295938  Q 468.612 215.295938 468.612 211.137938  L 468.612 114.117938  Q 468.612 109.959938 459.405 109.959938  L 336.645 109.959938  Q 327.438 109.959938 327.438 114.117938  L 327.438 211.137938  Q 327.438 215.295938 336.645 215.295938  z " clip-path="url(#p8e8ea68e6c)" style="fill: #eaf3fa; stroke: #167d9a; stroke-linejoin: miter" />
+   </g>
+   <g id="patch_5">
+    <path d="M 490.095 215.295938  L 612.855 215.295938  Q 622.062 215.295938 622.062 211.137938  L 622.062 114.117938  Q 622.062 109.959938 612.855 109.959938  L 490.095 109.959938  Q 480.888 109.959938 480.888 114.117938  L 480.888 211.137938  Q 480.888 215.295938 490.095 215.295938  z " clip-path="url(#p8e8ea68e6c)" style="fill: #eaf3fa; stroke: #167d9a; stroke-linejoin: miter" />
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="91.125" y="141.837938" transform="rotate(-0 91.125 141.837938)">2021–2022</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(59.625703 172.615477)">Ajuste interno</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(28.83375 183.417938)">Regiones de entrenamiento</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 160.643544 164.013937  Q 167.850478 164.013937 173.939378 164.013937  " style="fill: none; stroke: #000000; stroke-linecap: round" />
+    <path d="M 169.539378 161.813938  L 173.939378 164.013937  L 169.539378 166.213937  " style="fill: none; stroke: #000000; stroke-linecap: round" />
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="244.575" y="141.837938" transform="rotate(-0 244.575 141.837938)">Optuna</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(198.463359 172.615477)">TPE + MedianPruner</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(198.821953 183.417938)">Sin etiquetas finales</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 314.093544 164.013937  Q 321.300478 164.013937 327.389378 164.013937  " style="fill: none; stroke: #000000; stroke-linecap: round" />
+    <path d="M 322.989378 161.813938  L 327.389378 164.013937  L 322.989378 166.213937  " style="fill: none; stroke: #000000; stroke-linecap: round" />
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="398.025" y="141.837938" transform="rotate(-0 398.025 141.837938)">2023</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(362.472891 172.255477)">Región excluida</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(362.446875 183.417938)">Evaluación final</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 467.543544 164.013937  Q 474.750478 164.013937 480.839378 164.013937  " style="fill: none; stroke: #000000; stroke-linecap: round" />
+    <path d="M 476.439378 161.813938  L 480.839378 164.013937  L 476.439378 166.213937  " style="fill: none; stroke: #000000; stroke-linecap: round" />
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="551.475" y="141.837938" transform="rotate(-0 551.475 141.837938)">Estadística</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(508.779141 172.615477)">Bloques regionales</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(511.141641 183.417938)">Bootstrap + Holm</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 13.2px; font-family: 'DejaVu Sans'; text-anchor: middle" x="321.3" y="24.957938" transform="rotate(-0 321.3 24.957938)">Protocolo común · estimación contemporánea con separación espacial y temporal</text>
+   </g>
+  </g>
+  <g id="text_10">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #526173" x="311.4" y="344.157938" transform="rotate(-0 311.4 344.157938)">NutriRisk AI · Datos sintéticos · Evaluación exploratoria</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p8e8ea68e6c">
+   <rect x="14.4" y="30.957938" width="613.8" height="277.2" />
+  </clipPath>
+ </defs>
+<rect x="0" y="360.720047" width="642.6" height="83" fill="white" /><g font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#213744"><text x="22" y="385.720047">Cómo leer: El ajuste usa etiquetas hasta 2022; las etiquetas de 2023 se reservan para evaluar regiones excluidas.</text><text x="22" y="404.720047">Interpretación: La separación reduce la reutilización del resultado final durante la búsqueda de hiperparámetros.</text><text x="22" y="423.720047">Alcance: Se conocen covariables de 2023: es estimación contemporánea, no pronóstico sin datos futuros; la muestra es sintética.</text></g></svg>

@@ -1,0 +1,25 @@
+code,name,region,level,parent_code,urban_rural,population,population_u5,area_km2,altitude_m,climate_zone,rainfall_mm,temperature_c,ndvi,food_insecurity_index,water_coverage,sanitation_coverage,latitude,longitude,neighbor_codes,is_synthetic
+T01,Valle Verde,Norte,DEPARTMENT,,MIXED,133368,14771,9702.0,507.0,Árido cálido,568.0,26.9,0.446,0.725,0.637,0.379,3.2,-76.4,"['T02', 'T07']",True
+T02,Sierra Claro,Norte,DEPARTMENT,,MIXED,619508,67949,9697.3,651.0,Árido cálido,500.0,27.4,0.374,0.565,0.646,0.495,3.6763,-75.575,"['T01', 'T03', 'T07', 'T08', 'T09']",True
+T03,Loma Nuevo,Norte,DEPARTMENT,,MIXED,386438,35103,9702.0,745.0,Árido cálido,506.0,26.4,0.306,0.707,0.629,0.573,3.2,-74.75,"['T02', 'T04', 'T09']",True
+T04,Costa Hondo,Norte,DEPARTMENT,,MIXED,704115,62594,9697.3,333.0,Árido cálido,508.0,27.8,0.394,0.651,0.647,0.511,3.6763,-73.925,"['T03', 'T05', 'T09', 'T10', 'T11']",True
+T05,Río Grande,Norte,DEPARTMENT,,MIXED,667601,70415,9702.0,402.0,Árido cálido,418.0,27.6,0.281,0.731,0.613,0.512,3.2,-73.1,"['T04', 'T06', 'T11']",True
+T06,Monte Florido,Norte,DEPARTMENT,,MIXED,345109,30520,9697.3,298.0,Árido cálido,560.0,29.0,0.376,0.726,0.607,0.477,3.6763,-72.275,"['T05', 'T11', 'T12']",True
+T07,Llano Serrano,Centro,DEPARTMENT,,MIXED,427577,41584,9691.8,1093.0,Templado subhúmedo,1327.0,19.0,0.51,0.271,0.824,0.819,4.1526,-76.4,"['T01', 'T02', 'T08', 'T13']",True
+T08,Pampa Central,Centro,DEPARTMENT,,MIXED,513093,56142,9685.6,1266.0,Templado subhúmedo,983.0,17.7,0.516,0.35,0.849,0.729,4.6289,-75.575,"['T02', 'T07', 'T09', 'T13', 'T14', 'T15']",True
+T09,Campo del Sol,Centro,DEPARTMENT,,MIXED,569556,53564,9691.8,1243.0,Templado subhúmedo,1215.0,19.4,0.516,0.241,0.924,0.864,4.1526,-74.75,"['T02', 'T03', 'T04', 'T08', 'T10', 'T15']",True
+T10,Alta de Agua,Centro,DEPARTMENT,,MIXED,522139,55611,9685.6,1601.0,Templado subhúmedo,1125.0,18.6,0.517,0.382,0.848,0.736,4.6289,-73.925,"['T04', 'T09', 'T11', 'T15', 'T16', 'T17']",True
+T11,Bajo Alto,Centro,DEPARTMENT,,MIXED,538482,57393,9691.8,1583.0,Templado subhúmedo,1116.0,20.4,0.605,0.337,0.793,0.775,4.1526,-73.1,"['T04', 'T05', 'T06', 'T10', 'T12', 'T17']",True
+T12,Puerto Bonito,Centro,DEPARTMENT,,MIXED,915564,80663,9685.6,1030.0,Templado subhúmedo,1194.0,18.7,0.667,0.325,0.832,0.806,4.6289,-72.275,"['T06', 'T11', 'T17', 'T18']",True
+T13,Cañón Fértil,Sur,DEPARTMENT,,MIXED,401646,40003,9678.7,2499.0,Altiplano frío,647.0,11.9,0.447,0.475,0.668,0.573,5.1053,-76.4,"['T07', 'T08', 'T14', 'T19']",True
+T14,Sabana del Este,Sur,DEPARTMENT,,MIXED,625742,70011,9671.1,3392.0,Altiplano frío,542.0,9.0,0.368,0.514,0.671,0.645,5.5816,-75.575,"['T08', 'T13', 'T15', 'T19', 'T20', 'T21']",True
+T15,Cumbre Real,Sur,DEPARTMENT,,MIXED,506396,43612,9678.7,2676.0,Altiplano frío,666.0,8.9,0.491,0.542,0.677,0.71,5.1053,-74.75,"['T08', 'T09', 'T10', 'T14', 'T16', 'T21']",True
+T16,Vega Pacífico,Sur,DEPARTMENT,,MIXED,720368,64788,9671.1,3523.0,Altiplano frío,513.0,8.3,0.519,0.558,0.755,0.696,5.5816,-73.925,"['T10', 'T15', 'T17', 'T21', 'T22', 'T23']",True
+T17,Tierra Andino,Sur,DEPARTMENT,,MIXED,85701,8245,9678.7,3194.0,Altiplano frío,528.0,10.2,0.395,0.567,0.663,0.527,5.1053,-73.1,"['T10', 'T11', 'T12', 'T16', 'T18', 'T23']",True
+T18,Bosque Tropical,Sur,DEPARTMENT,,MIXED,618128,68758,9671.1,3119.0,Altiplano frío,559.0,8.1,0.482,0.574,0.71,0.532,5.5816,-72.275,"['T12', 'T17', 'T23', 'T24']",True
+T19,Marisma del Valle,Occidente,DEPARTMENT,,MIXED,82752,8290,9663.0,710.0,Templado húmedo,978.0,23.1,0.476,0.461,0.814,0.728,6.0579,-76.4,"['T13', 'T14', 'T20']",True
+T20,Quebrada Escondido,Occidente,DEPARTMENT,,MIXED,551137,57806,9654.1,1040.0,Templado húmedo,1082.0,21.3,0.606,0.305,0.789,0.707,6.5342,-75.575,"['T14', 'T19', 'T21']",True
+T21,Altiplano Dorado,Occidente,DEPARTMENT,,MIXED,74622,8431,9663.0,1136.0,Templado húmedo,1022.0,22.1,0.581,0.304,0.717,0.746,6.0579,-74.75,"['T14', 'T15', 'T16', 'T20', 'T22']",True
+T22,Ribera del Norte,Oriente,DEPARTMENT,,MIXED,756024,83942,9654.1,350.0,Tropical húmedo,2403.0,26.7,0.695,0.505,0.68,0.517,6.5342,-73.925,"['T16', 'T21', 'T23']",True
+T23,Mesa Austral,Oriente,DEPARTMENT,,MIXED,776152,68424,9663.0,430.0,Tropical húmedo,1867.0,27.5,0.649,0.585,0.612,0.336,6.0579,-73.1,"['T16', 'T17', 'T18', 'T22', 'T24']",True
+T24,Cruz Unido,Oriente,DEPARTMENT,,MIXED,599670,53049,9654.1,178.0,Tropical húmedo,1821.0,25.1,0.655,0.431,0.668,0.47,6.5342,-72.275,"['T18', 'T23']",True

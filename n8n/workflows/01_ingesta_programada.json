@@ -1,0 +1,109 @@
+{
+  "name": "NutriRisk · 01 Ingesta programada",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [{ "field": "cronExpression", "expression": "0 5 * * *" }]
+        }
+      },
+      "id": "b1c1a2d4-0001-4c11-9a01-000000000001",
+      "name": "Cada día 05:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [-240, 0]
+    },
+    {
+      "parameters": {
+        "url": "={{$env.NUTRIRISK_API_URL || 'http://api:8000'}}/api/v1/ingestion/n8n/sync",
+        "method": "POST",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [{ "name": "X-N8N-Token", "value": "={{$env.NUTRIRISK_API_TOKEN || 'nutririsk-n8n-token'}}" }]
+        },
+        "options": { "timeout": 300000 }
+      },
+      "id": "b1c1a2d4-0001-4c11-9a01-000000000002",
+      "name": "Sincronizar ingestas",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [0, 0],
+      "notes": "Reprocesa los datasets con archivo disponible (CSV/XLSX/Parquet) y devuelve el resumen."
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "loose" },
+          "conditions": [
+            {
+              "id": "cond-1",
+              "leftValue": "={{$json.processed}}",
+              "rightValue": 0,
+              "operator": { "type": "number", "operation": "smaller" }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "b1c1a2d4-0001-4c11-9a01-000000000003",
+      "name": "¿Sin registros procesados?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [240, 0]
+    },
+    {
+      "parameters": {
+        "fromEmail": "alertas@nutririsk.local",
+        "toEmail": "={{$env.NUTRIRISK_ALERT_EMAIL || 'equipo@nutririsk.local'}}",
+        "subject": "NutriRisk · Ingesta sin registros procesados",
+        "emailFormat": "text",
+        "text": "=La ingesta programada finalizó sin registros procesados.\n\nResumen:\n{{ JSON.stringify($json, null, 2) }}"
+      },
+      "id": "b1c1a2d4-0001-4c11-9a01-000000000004",
+      "name": "Notificar incidencia",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [520, -120],
+      "notes": "Configure las credenciales SMTP en n8n (Credentials → SMTP)."
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            { "id": "a1", "name": "resumen", "value": "={{$json.results}}", "type": "array" },
+            { "id": "a2", "name": "procesados", "value": "={{$json.processed}}", "type": "number" },
+            { "id": "a3", "name": "fecha", "value": "={{$now.toISO()}}", "type": "string" }
+          ]
+        },
+        "options": {}
+      },
+      "id": "b1c1a2d4-0001-4c11-9a01-000000000005",
+      "name": "Resumen de ingesta",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [520, 120]
+    }
+  ],
+  "connections": {
+    "Cada día 05:00": {
+      "main": [[{ "node": "Sincronizar ingestas", "type": "main", "index": 0 }]]
+    },
+    "Sincronizar ingestas": {
+      "main": [[{ "node": "¿Sin registros procesados?", "type": "main", "index": 0 }]]
+    },
+    "¿Sin registros procesados?": {
+      "main": [
+        [{ "node": "Notificar incidencia", "type": "main", "index": 0 }],
+        [{ "node": "Resumen de ingesta", "type": "main", "index": 0 }]
+      ]
+    }
+  },
+  "active": false,
+  "settings": { "executionOrder": "v1" },
+  "pinData": {},
+  "meta": {
+    "description": "Ingesta programada de datasets con notificación de incidencias.",
+    "templateCredsSetupCompleted": false
+  },
+  "tags": [{ "name": "NutriRisk" }, { "name": "Ingesta" }]
+}

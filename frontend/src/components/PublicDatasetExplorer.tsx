@@ -1,0 +1,52 @@
+import { useState } from 'react';
+import { useQuery } from '@tanstack/react-query';
+import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { api, downloadFile } from '../api/client';
+import { Card, ErrorBox, Loading } from './ui';
+import { VisualExplanation } from './VisualExplanation';
+
+const fields:Record<string,string>={country_name:'País',country_code:'Código',period_year:'Año',region:'Región',stunting_prevalence_pct:'Retraso del crecimiento (%)',gdp_per_capita_constant_usd:'PIB por habitante (USD de 2015)',basic_drinking_water_pct:'Agua básica (%)',basic_sanitation_pct:'Saneamiento (%)',electricity_access_pct:'Electricidad (%)',urban_population_pct:'Población urbana (%)',population_density:'Habitantes por km²',fertility_births_per_woman:'Hijos por mujer',female_secondary_enrollment_pct:'Matrícula femenina (%)',pm25_exposure:'PM2.5 (µg/m³)'};
+type Data=Record<string,any>;
+const value=(x:unknown)=>typeof x==='number'?x.toLocaleString('es-PE',{maximumFractionDigits:2}):x==null?'—':String(x);
+export default function PublicDatasetExplorer(){
+  const [year,setYear]=useState('2023');const [country,setCountry]=useState('');const [region,setRegion]=useState('');const [search,setSearch]=useState('');const [page,setPage]=useState(1);const [all,setAll]=useState(false);const [error,setError]=useState('');
+  const query=useQuery({queryKey:['public-dataset',year,country,region,search,page],queryFn:()=>api.get<Data>('/research/real/dataset',{year:year||undefined,country:country||undefined,region:region||undefined,search:search||undefined,page,page_size:25}),placeholderData:previous=>previous});
+  const trend=useQuery({queryKey:['public-dataset-trend',country,region,search],queryFn:()=>api.get<Data>('/research/real/dataset',{country:country||undefined,region:region||undefined,search:search||undefined,page_size:1})});
+  async function download(){try{setError('');await downloadFile('/research/real/files/country_panel.csv','Dataset_publico_Banco_Mundial_JME.csv');}catch(e){setError(String(e));}}
+  if(query.isLoading&&!query.data)return <Loading label="Leyendo los registros públicos…"/>;
+  if(query.error||!query.data)return <ErrorBox message={String(query.error||'No se pudo leer el dataset')}/>;
+  const d=query.data;const columns=['country_name','period_year','stunting_prevalence_pct',...Object.keys(fields).filter(x=>!['country_name','country_code','period_year','region','stunting_prevalence_pct'].includes(x)).slice(0,all?9:4)];
+  const selected=d.countries.find((x:Data)=>x.code===country)?.name;
+  return <>
+    <div className="nr-section-heading"><div><h2>Dataset público para la predicción de desnutrición infantil</h2><p>Determinantes socioeconómicos, sanitarios y ambientales utilizados por los modelos de IA para predecir el riesgo nutricional.</p></div><button className="btn btn-primary" onClick={()=>void download()}>↓ Descargar dataset completo</button></div>
+    {error&&<ErrorBox message={error}/>}
+    <div className="nr-data-summary"><span><strong>{d.rows_total.toLocaleString('es-PE')}</strong>filas reales</span><span><strong>{d.countries.length}</strong>países</span><span><strong>2000–2024</strong>años de seguimiento</span><span><strong>9</strong>determinantes de desnutrición</span></div>
+    <Card title="Asociación de determinantes con la desnutrición infantil" subtitle="Marco conceptual OMS/UNICEF sobre causas subyacentes y estructurales de la desnutrición infantil">
+      <div className="nr-source-grid">
+        <div className="nr-source-card"><strong>Retraso del crecimiento (OMS)</strong><small>Variable objetivo de desnutrición</small><p>Prevalencia poblacional en menores de 5 años. Define el riesgo alto/muy alto (≥20 %).</p></div>
+        <div className="nr-source-card"><strong>Saneamiento y agua potable</strong><small>Determinante sanitario de absorción</small><p>Previene diarreas, parasitismo y enteropatía ambiental que causan desnutrición crónica.</p></div>
+        <div className="nr-source-card"><strong>PIB per cápita</strong><small>Determinante económico de acceso</small><p>Capacidad de compra de alimentos de calidad calórica y proteica para los hogares.</p></div>
+        <div className="nr-source-card"><strong>Educación secundaria femenina</strong><small>Determinante de cuidado materno</small><p>Factor protector en lactancia materna exclusiva, higiene y nutrición complementaria.</p></div>
+        <div className="nr-source-card"><strong>Acceso a electricidad</strong><small>Seguridad alimentaria</small><p>Permite refrigeración de alimentos perecibles y cocción higiénica en el hogar.</p></div>
+        <div className="nr-source-card"><strong>Tasa de fertilidad y ambiente</strong><small>Presión en el hogar y salud</small><p>Menor espaciamiento de nacimientos y exposición a PM2.5 incrementan vulnerabilidad infantil.</p></div>
+      </div>
+    </Card>
+    <Card title="Explorador de registros de desnutrición y factores" subtitle="Cada fila es un país y un año con sus determinantes reales y prevalencia de desnutrición JME.">
+      <div className="nr-dataset-filters"><label>País<select aria-label="País del dataset" value={country} onChange={e=>{setCountry(e.target.value);setPage(1);}}><option value="">Todos los países</option>{d.countries.map((x:Data)=><option key={x.code} value={x.code}>{x.name}</option>)}</select></label><label>Año<select aria-label="Año del dataset" value={year} onChange={e=>{setYear(e.target.value);setPage(1);}}><option value="">Todos los años</option>{d.years.map((x:number)=><option key={x}>{x}</option>)}</select></label><label>Región<select aria-label="Región del dataset" value={region} onChange={e=>{setRegion(e.target.value);setPage(1);}}><option value="">Todas las regiones</option>{d.regions.map((x:string)=><option key={x}>{x}</option>)}</select></label><label>Buscar país<input aria-label="Buscar país en el dataset" value={search} onChange={e=>{setSearch(e.target.value);setPage(1);}} placeholder="Nombre o código del país"/></label></div>
+      <div className="nr-table-toolbar"><span className="nr-caption">{d.total.toLocaleString('es-PE')} registros encontrados · página {page} de {Math.max(1,Math.ceil(d.total/25))}</span><label><input type="checkbox" checked={all} onChange={e=>setAll(e.target.checked)}/> Todas las variables</label></div>
+      <div className="nr-dataset-table"><table className="data-table"><thead><tr>{columns.map(key=><th key={key}>{fields[key]}</th>)}</tr></thead><tbody>{d.items.map((row:Data)=><tr key={row.country_code+row.period_year}>{columns.map(key=><td key={key}>{value(row[key])}</td>)}</tr>)}</tbody></table></div>
+      {!d.items.length&&<p>No hay observaciones para los filtros seleccionados.</p>}
+      <div className="nr-pagination"><button className="btn btn-sm" disabled={page===1} onClick={()=>setPage(page-1)}>Página anterior</button><span>{page} / {Math.max(1,Math.ceil(d.total/25))}</span><button className="btn btn-sm" disabled={page*25>=d.total} onClick={()=>setPage(page+1)}>Página siguiente</button></div>
+      <VisualExplanation interpretation={`Se muestran mediciones y estimaciones publicadas para ${selected||'los países seleccionados'}${year?` en ${year}`:' en todos los años disponibles'}. La columna objetivo es la prevalencia nacional JME de retraso del crecimiento.`} explanation="El modelo utiliza determinantes económicos, servicios básicos y ambiente. La prevalencia se usa como resultado; no se introduce como predictor. Estos registros son anteriores al entrenamiento, no predicciones del modelo." limitations="Son estadísticas nacionales; no contienen expedientes infantiles. JME combina encuestas y modelado. Un guion representa un valor ausente, no un cero. Matrícula secundaria bruta puede superar 100 %."/>
+    </Card>
+    <Card title={selected?`Evolución publicada · ${selected}`:'Evolución publicada · selección actual'} subtitle="Serie completa 2000–2024; el filtro de año de la tabla no recorta esta gráfica.">
+      {trend.error?<ErrorBox message={String(trend.error)}/>:<div style={{height:300}}><ResponsiveContainer><LineChart data={trend.data?.trend||[]} margin={{left:10,right:20,bottom:15}}><CartesianGrid strokeDasharray="3 3"/><XAxis dataKey="year" tick={{fontSize:11}}/><YAxis unit=" %"/><Tooltip formatter={(v:number)=>`${v.toFixed(2)} %`}/><Line isAnimationActive={false} dataKey="prevalence" name="Prevalencia publicada" stroke="#0d9488" strokeWidth={3} dot={false} connectNulls={false}/></LineChart></ResponsiveContainer></div>}
+      <VisualExplanation interpretation={selected?`La línea muestra la prevalencia anual publicada para ${selected}.`:'La línea muestra la media simple de las prevalencias nacionales de los países seleccionados en cada año.'} explanation="Se calcula directamente desde las filas del dataset descargado, sin ejecutar el modelo predictivo. Cada punto conserva el año de referencia de la fuente." limitations="Las series JME son modeladas y revisadas retrospectivamente. La media de países no es una prevalencia global ponderada por población; la tendencia no identifica efectos causales."/>
+    </Card>
+    <Card title="De dónde provienen los datos" subtitle="Enlaces oficiales y variables exactas del dataset; las huellas técnicas están disponibles en las descargas.">
+      <div className="nr-source-intro"><div><strong>Banco Mundial · World Development Indicators</strong><p>Economía, servicios básicos, población y ambiente.</p><a href="https://data.worldbank.org/" target="_blank" rel="noreferrer">Abrir portal de datos ↗</a></div><div><strong>UNICEF / OMS / Banco Mundial · JME</strong><p>Estimaciones conjuntas de malnutrición infantil.</p><a href={d.source_url} target="_blank" rel="noreferrer">Abrir fuente del resultado ↗</a></div></div>
+      <div className="nr-source-grid">{d.variables.map((x:Data)=><div className="nr-source-card" key={x.variable}><strong>{fields[x.variable]||x.name}</strong><small>Indicador oficial: {x.indicator}</small><div><a href={x.url} target="_blank" rel="noreferrer">Ver serie original ↗</a><a href={x.api_url} target="_blank" rel="noreferrer">Ver datos de origen ↗</a></div><details><summary>Definición de la fuente</summary><p>{x.definition}</p><p>{x.provider}</p></details></div>)}</div>
+      <p className="nr-caption">Snapshot descargado el {new Date(d.retrieved_at).toLocaleDateString('es-PE')}. <a href={d.license_url} target="_blank" rel="noreferrer">Condiciones de uso y atribución ↗</a></p>
+    </Card>
+  </>;
+}

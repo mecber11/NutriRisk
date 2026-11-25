@@ -1,0 +1,18 @@
+{
+  "seed": 42,
+  "years": [
+    2021,
+    2022,
+    2023
+  ],
+  "territories": 24,
+  "children": 14400,
+  "files": [
+    "territories.geojson",
+    "children_synthetic.csv",
+    "territories_synthetic.csv",
+    "dataset_dictionary.json"
+  ],
+  "generated_at": "2026-11-04T15:14:40.717225+00:00",
+  "run_id": "8cd4fb6109b3"
+}

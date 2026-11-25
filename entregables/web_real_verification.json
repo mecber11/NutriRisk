@@ -1,0 +1,20 @@
+{
+  "status": "PASSED",
+  "checks": [
+    "authenticated_real_landing",
+    "real_route_/modelos",
+    "real_route_/datasets",
+    "real_route_/investigacion",
+    "friedman_and_pairwise_statistics_visible",
+    "shapiro_and_moran_visible",
+    "hyperparameter_tables_and_model_region_filters",
+    "visual_charts_and_no_rendered_code_or_json_blocks",
+    "350_trials_filter_and_pagination",
+    "four_actual_figures_loaded",
+    "authenticated_real_results_download",
+    "mobile_real_page_rendered",
+    "no_browser_javascript_errors"
+  ],
+  "count": 13,
+  "browser_errors": []
+}

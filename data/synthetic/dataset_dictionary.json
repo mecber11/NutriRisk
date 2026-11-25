@@ -1,0 +1,295 @@
+{
+  "dataset": "andara_child_survey_synthetic",
+  "source": "SYNTHETIC",
+  "note": "Datos completamente sintéticos generados para demostración. No representan prevalencias reales.",
+  "generated_at": "2026-11-04T15:14:40.717225+00:00",
+  "seed": 42,
+  "years": [
+    2021,
+    2022,
+    2023
+  ],
+  "rows": 14400,
+  "variables": [
+    {
+      "name": "child_code",
+      "label": "Identificador del niño",
+      "dtype": "string",
+      "description": "Código sintético único del niño (seudonimizado).",
+      "is_required": true,
+      "is_identifier": true
+    },
+    {
+      "name": "household_code",
+      "label": "Identificador del hogar",
+      "dtype": "string",
+      "description": "Código sintético del hogar.",
+      "is_required": true,
+      "is_identifier": true
+    },
+    {
+      "name": "territory_code",
+      "label": "Código de territorio",
+      "dtype": "string",
+      "description": "Departamento sintético (T01-T24).",
+      "is_required": true
+    },
+    {
+      "name": "region",
+      "label": "Región",
+      "dtype": "string",
+      "description": "Región administrativa sintética.",
+      "is_required": true
+    },
+    {
+      "name": "period_year",
+      "label": "Año del levantamiento",
+      "dtype": "integer",
+      "unit": "año",
+      "description": "Año de la encuesta.",
+      "is_required": true,
+      "min_value": 1990,
+      "max_value": 2100
+    },
+    {
+      "name": "age_months",
+      "label": "Edad en meses",
+      "dtype": "integer",
+      "unit": "meses",
+      "description": "Edad del niño al momento de la medición (0-59).",
+      "is_required": true,
+      "min_value": 0,
+      "max_value": 59
+    },
+    {
+      "name": "sex",
+      "label": "Sexo",
+      "dtype": "category",
+      "description": "M = masculino, F = femenino.",
+      "is_required": true,
+      "allowed_values": [
+        "M",
+        "F"
+      ]
+    },
+    {
+      "name": "weight_kg",
+      "label": "Peso",
+      "dtype": "float",
+      "unit": "kg",
+      "description": "Peso medido en kilogramos.",
+      "is_required": true,
+      "min_value": 1.0,
+      "max_value": 35.0
+    },
+    {
+      "name": "height_cm",
+      "label": "Talla / longitud",
+      "dtype": "float",
+      "unit": "cm",
+      "description": "Longitud (<24 m) o talla (>=24 m) en centímetros.",
+      "is_required": true,
+      "min_value": 35.0,
+      "max_value": 130.0
+    },
+    {
+      "name": "muac_cm",
+      "label": "Perímetro braquial",
+      "dtype": "float",
+      "unit": "cm",
+      "description": "MUAC en centímetros.",
+      "min_value": 9.0,
+      "max_value": 20.0
+    },
+    {
+      "name": "edema",
+      "label": "Edema bilateral",
+      "dtype": "boolean",
+      "description": "Presencia de edema bilateral.",
+      "is_required": false
+    },
+    {
+      "name": "birth_weight_g",
+      "label": "Peso al nacer",
+      "dtype": "float",
+      "unit": "g",
+      "description": "Peso al nacer en gramos.",
+      "min_value": 500,
+      "max_value": 6000
+    },
+    {
+      "name": "breastfeeding_months",
+      "label": "Meses de lactancia",
+      "dtype": "integer",
+      "unit": "meses",
+      "description": "Duración de lactancia materna.",
+      "min_value": 0,
+      "max_value": 36
+    },
+    {
+      "name": "wealth_quintile",
+      "label": "Quintil de riqueza",
+      "dtype": "integer",
+      "description": "1 = más pobre, 5 = más rico.",
+      "is_required": true,
+      "min_value": 1,
+      "max_value": 5
+    },
+    {
+      "name": "wealth_index",
+      "label": "Índice de riqueza",
+      "dtype": "float",
+      "description": "Índice continuo de riqueza del hogar."
+    },
+    {
+      "name": "maternal_education",
+      "label": "Educación materna",
+      "dtype": "category",
+      "description": "Nivel educativo de la madre.",
+      "is_required": true,
+      "allowed_values": [
+        "NONE",
+        "PRIMARY",
+        "SECONDARY",
+        "TERTIARY"
+      ]
+    },
+    {
+      "name": "maternal_age",
+      "label": "Edad materna",
+      "dtype": "integer",
+      "unit": "años",
+      "min_value": 12,
+      "max_value": 55
+    },
+    {
+      "name": "water_source",
+      "label": "Fuente de agua",
+      "dtype": "category",
+      "description": "Fuente principal de agua del hogar.",
+      "is_required": true,
+      "allowed_values": [
+        "PIPED",
+        "IMPROVED",
+        "UNIMPROVED",
+        "SURFACE"
+      ]
+    },
+    {
+      "name": "sanitation",
+      "label": "Saneamiento",
+      "dtype": "category",
+      "description": "Tipo de saneamiento del hogar.",
+      "is_required": true,
+      "allowed_values": [
+        "IMPROVED",
+        "SHARED",
+        "UNIMPROVED",
+        "OPEN"
+      ]
+    },
+    {
+      "name": "electricity",
+      "label": "Electricidad",
+      "dtype": "boolean",
+      "description": "Acceso a electricidad."
+    },
+    {
+      "name": "cooking_fuel",
+      "label": "Combustible de cocina",
+      "dtype": "category",
+      "description": "Combustible principal para cocinar.",
+      "allowed_values": [
+        "GAS",
+        "ELECTRICITY",
+        "KEROSENE",
+        "WOOD",
+        "CHARCOAL"
+      ]
+    },
+    {
+      "name": "assets_count",
+      "label": "Activos del hogar",
+      "dtype": "integer",
+      "description": "Número de activos durables."
+    },
+    {
+      "name": "household_size",
+      "label": "Tamaño del hogar",
+      "dtype": "integer",
+      "unit": "personas",
+      "description": "Número de miembros del hogar."
+    },
+    {
+      "name": "food_insecurity_score",
+      "label": "Inseguridad alimentaria",
+      "dtype": "float",
+      "description": "Escala 0-1 de inseguridad alimentaria del hogar.",
+      "min_value": 0.0,
+      "max_value": 1.0
+    },
+    {
+      "name": "urban_rural",
+      "label": "Área",
+      "dtype": "category",
+      "description": "URBAN o RURAL.",
+      "allowed_values": [
+        "URBAN",
+        "RURAL"
+      ]
+    },
+    {
+      "name": "minimum_diet_diversity",
+      "label": "Dieta mínima diversa",
+      "dtype": "boolean",
+      "description": "Cumple diversidad dietética mínima."
+    },
+    {
+      "name": "vaccination_complete",
+      "label": "Vacunación completa",
+      "dtype": "boolean",
+      "description": "Esquema de vacunación completo para la edad."
+    },
+    {
+      "name": "diarrhea_14d",
+      "label": "Diarrea (14 días)",
+      "dtype": "boolean",
+      "description": "Episodio de diarrea en las últimas 2 semanas."
+    },
+    {
+      "name": "fever_14d",
+      "label": "Fiebre (14 días)",
+      "dtype": "boolean",
+      "description": "Episodio de fiebre en las últimas 2 semanas."
+    },
+    {
+      "name": "altitude_m",
+      "label": "Altitud",
+      "dtype": "float",
+      "unit": "m",
+      "description": "Altitud del territorio."
+    },
+    {
+      "name": "rainfall_mm",
+      "label": "Precipitación",
+      "dtype": "float",
+      "unit": "mm/año",
+      "description": "Precipitación media anual."
+    },
+    {
+      "name": "temperature_c",
+      "label": "Temperatura",
+      "dtype": "float",
+      "unit": "°C",
+      "description": "Temperatura media anual."
+    },
+    {
+      "name": "ndvi",
+      "label": "NDVI",
+      "dtype": "float",
+      "description": "Índice de vegetación (0-1).",
+      "min_value": 0.0,
+      "max_value": 1.0
+    }
+  ]
+}

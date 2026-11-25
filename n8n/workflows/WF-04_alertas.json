@@ -1,0 +1,164 @@
+{
+  "name": "NutriRisk WF-04 · Evaluación y distribución de alertas",
+  "nodes": [
+    {
+      "id": "3657d18b-5bcc-49ed-8e8f-01e1bad4e6a6",
+      "name": "Programación",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 6 * * *"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a5643e81-3972-49c0-8a20-5184fa843156",
+      "name": "Ejecución manual",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        180
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "d7cfb9c5-7adf-4f38-926e-5d1cd0200d58",
+      "name": "Ejecutar operación",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        280,
+        0
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.NUTRIRISK_API_URL + '/api/v1/alerts/n8n/evaluate' }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "X-N8N-Token",
+              "value": "={{ $env.NUTRIRISK_API_TOKEN }}"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 300000
+        }
+      }
+    },
+    {
+      "id": "ddc31533-d145-4a73-929e-087e231dcb69",
+      "name": "Hay alertas nuevas",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        520,
+        0
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "2b916299-5cf9-4fc0-8132-4a6f04002133",
+              "leftValue": "={{ $json.created }}",
+              "rightValue": 0,
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      }
+    },
+    {
+      "id": "968d148b-aa31-4384-8d89-a83835a4c8c9",
+      "name": "Distribuir alertas",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        760,
+        -80
+      ],
+      "parameters": {
+        "fromEmail": "={{ $env.NUTRIRISK_SMTP_FROM }}",
+        "toEmail": "={{ $env.NUTRIRISK_ALERT_EMAIL }}",
+        "subject": "NutriRisk: nuevas alertas de riesgo",
+        "emailFormat": "text",
+        "text": "=Alertas nuevas: {{ $json.created }}. Revise el observatorio; la interpretación requiere supervisión profesional."
+      },
+      "notes": "Seleccione credencial SMTP y destinatario autorizado antes de activar. No enviar datos personales."
+    }
+  ],
+  "connections": {
+    "Programación": {
+      "main": [
+        [
+          {
+            "node": "Ejecutar operación",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ejecución manual": {
+      "main": [
+        [
+          {
+            "node": "Ejecutar operación",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ejecutar operación": {
+      "main": [
+        [
+          {
+            "node": "Hay alertas nuevas",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Hay alertas nuevas": {
+      "main": [
+        [
+          {
+            "node": "Distribuir alertas",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "tags": []
+}
